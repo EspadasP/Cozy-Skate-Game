@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c50espd6ey3jw"
+path="res://.godot/imported/bowl-corner-outer.obj-46ff08dc4de34e7b1db47c6f608daab6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bowl-corner-outer.obj-46ff08dc4de34e7b1db47c6f608daab6.mesh"]
+
+source_file="res://assets/OBJ format/bowl-corner-outer.obj"
+dest_files=["res://.godot/imported/bowl-corner-outer.obj-46ff08dc4de34e7b1db47c6f608daab6.mesh", "res://.godot/imported/bowl-corner-outer.obj-46ff08dc4de34e7b1db47c6f608daab6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

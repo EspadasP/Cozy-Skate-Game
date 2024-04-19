@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6dae2r2v57bv"
+path="res://.godot/imported/steps.obj-2485ba49f09508f0f88fab4f5d95d777.mesh"
+
+[deps]
+
+files=["res://.godot/imported/steps.obj-2485ba49f09508f0f88fab4f5d95d777.mesh"]
+
+source_file="res://assets/OBJ format/steps.obj"
+dest_files=["res://.godot/imported/steps.obj-2485ba49f09508f0f88fab4f5d95d777.mesh", "res://.godot/imported/steps.obj-2485ba49f09508f0f88fab4f5d95d777.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
