@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://d4humbnwb11pb"
+path="res://.godot/imported/Pyramid_6.obj-7508558c6ccdfc95d2aa6ca67079210e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Pyramid_6.obj-7508558c6ccdfc95d2aa6ca67079210e.mesh"]
+
+source_file="res://assets/skateparkmodules/Pyramid_6.obj"
+dest_files=["res://.godot/imported/Pyramid_6.obj-7508558c6ccdfc95d2aa6ca67079210e.mesh", "res://.godot/imported/Pyramid_6.obj-7508558c6ccdfc95d2aa6ca67079210e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dsw88c8r7nxr7"
+path="res://.godot/imported/16293_SkatePark_funbox04_v3_NEW.obj-cf6b21c2f009d7fdd141614093b2ca5a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/16293_SkatePark_funbox04_v3_NEW.obj-cf6b21c2f009d7fdd141614093b2ca5a.mesh"]
+
+source_file="res://assets/skateparkmodules/SkatePark_funbox04_v3_L1.123c89987909-f173-4ac9-ad1e-1f786c9a5dd7/16293_SkatePark_funbox04_v3_NEW.obj"
+dest_files=["res://.godot/imported/16293_SkatePark_funbox04_v3_NEW.obj-cf6b21c2f009d7fdd141614093b2ca5a.mesh", "res://.godot/imported/16293_SkatePark_funbox04_v3_NEW.obj-cf6b21c2f009d7fdd141614093b2ca5a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

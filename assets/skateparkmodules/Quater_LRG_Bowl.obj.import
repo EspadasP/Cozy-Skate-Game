@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://crqtsccdqi8jj"
+path="res://.godot/imported/Quater_LRG_Bowl.obj-0c2c08f8f03c67dd8fdb0fb61c6d13a9.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Quater_LRG_Bowl.obj-0c2c08f8f03c67dd8fdb0fb61c6d13a9.mesh"]
+
+source_file="res://assets/skateparkmodules/Quater_LRG_Bowl.obj"
+dest_files=["res://.godot/imported/Quater_LRG_Bowl.obj-0c2c08f8f03c67dd8fdb0fb61c6d13a9.mesh", "res://.godot/imported/Quater_LRG_Bowl.obj-0c2c08f8f03c67dd8fdb0fb61c6d13a9.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

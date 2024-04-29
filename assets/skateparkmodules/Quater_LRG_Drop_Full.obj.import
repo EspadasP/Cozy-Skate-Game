@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cticroohsfah2"
+path="res://.godot/imported/Quater_LRG_Drop_Full.obj-c8ef6d10b5a8b04e1dae7e0a0c9c3d7a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Quater_LRG_Drop_Full.obj-c8ef6d10b5a8b04e1dae7e0a0c9c3d7a.mesh"]
+
+source_file="res://assets/skateparkmodules/Quater_LRG_Drop_Full.obj"
+dest_files=["res://.godot/imported/Quater_LRG_Drop_Full.obj-c8ef6d10b5a8b04e1dae7e0a0c9c3d7a.mesh", "res://.godot/imported/Quater_LRG_Drop_Full.obj-c8ef6d10b5a8b04e1dae7e0a0c9c3d7a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

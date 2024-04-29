@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6yucwb106qw7"
+path="res://.godot/imported/obstacle-middle.obj-d10df2c1dd0ac7084543e7d79b1ba40a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/obstacle-middle.obj-d10df2c1dd0ac7084543e7d79b1ba40a.mesh"]
+
+source_file="res://assets/kenney/obstacle-middle.obj"
+dest_files=["res://.godot/imported/obstacle-middle.obj-d10df2c1dd0ac7084543e7d79b1ba40a.mesh", "res://.godot/imported/obstacle-middle.obj-d10df2c1dd0ac7084543e7d79b1ba40a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

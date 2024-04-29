@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djfywelfopjxt"
+path="res://.godot/imported/Quater_SML_EuroGap_Half.obj-fff91421a5222a187442b0ee8e67c34d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Quater_SML_EuroGap_Half.obj-fff91421a5222a187442b0ee8e67c34d.mesh"]
+
+source_file="res://assets/skateparkmodules/Quater_SML_EuroGap_Half.obj"
+dest_files=["res://.godot/imported/Quater_SML_EuroGap_Half.obj-fff91421a5222a187442b0ee8e67c34d.mesh", "res://.godot/imported/Quater_SML_EuroGap_Half.obj-fff91421a5222a187442b0ee8e67c34d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

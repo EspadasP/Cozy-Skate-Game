@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://daxgs31031s6y"
+path="res://.godot/imported/ManPad_CNR_Blank.obj-bb28c24e0698ed334b85c6d9fb4a70f6.mesh"
+
+[deps]
+
+files=["res://.godot/imported/ManPad_CNR_Blank.obj-bb28c24e0698ed334b85c6d9fb4a70f6.mesh"]
+
+source_file="res://assets/skateparkmodules/ManPad_CNR_Blank.obj"
+dest_files=["res://.godot/imported/ManPad_CNR_Blank.obj-bb28c24e0698ed334b85c6d9fb4a70f6.mesh", "res://.godot/imported/ManPad_CNR_Blank.obj-bb28c24e0698ed334b85c6d9fb4a70f6.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

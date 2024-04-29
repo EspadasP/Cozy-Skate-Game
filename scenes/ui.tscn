@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://cjl6y4wjpsx7e"]
+
+[ext_resource type="FontFile" uid="uid://bc1mnhoqxgmx5" path="res://assets/UI/conthrax-sb.otf" id="1_xchk3"]
+[ext_resource type="Script" path="res://scenes/Label.gd" id="2_7ftxq"]
+[ext_resource type="Texture2D" uid="uid://bho0yth4ye3wp" path="res://assets/UI/weno.png" id="3_yb16y"]
+
+[node name="UI" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1151.0
+offset_bottom = 648.0
+
+[node name="Label" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -448.5
+offset_top = -113.0
+offset_right = 448.5
+offset_bottom = -11.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_colors/font_color = Color(0.929412, 0.670588, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("1_xchk3")
+theme_override_font_sizes/font_size = 0
+horizontal_alignment = 1
+autowrap_mode = 3
+script = ExtResource("2_7ftxq")
+
+[node name="CleanTricksTextTimer" type="Timer" parent="Label"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+layout_mode = 1
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -121.0
+offset_top = 24.0
+offset_right = -21.0
+offset_bottom = 124.0
+grow_horizontal = 0
+texture = ExtResource("3_yb16y")
+stretch_mode = 5
+
+[connection signal="timeout" from="Label/CleanTricksTextTimer" to="Label" method="_on_clean_tricks_text_timer_timeout"]

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://t2ji4h7rglxl"
+path="res://.godot/imported/rail-curve.obj-3d17a3393056e05e773915c9d04e6014.mesh"
+
+[deps]
+
+files=["res://.godot/imported/rail-curve.obj-3d17a3393056e05e773915c9d04e6014.mesh"]
+
+source_file="res://assets/kenney/rail-curve.obj"
+dest_files=["res://.godot/imported/rail-curve.obj-3d17a3393056e05e773915c9d04e6014.mesh", "res://.godot/imported/rail-curve.obj-3d17a3393056e05e773915c9d04e6014.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

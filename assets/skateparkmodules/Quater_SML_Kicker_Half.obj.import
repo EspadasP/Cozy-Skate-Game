@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c53k7d0d88sel"
+path="res://.godot/imported/Quater_SML_Kicker_Half.obj-70f21495ed402a3bf552b9ab4454214a.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Quater_SML_Kicker_Half.obj-70f21495ed402a3bf552b9ab4454214a.mesh"]
+
+source_file="res://assets/skateparkmodules/Quater_SML_Kicker_Half.obj"
+dest_files=["res://.godot/imported/Quater_SML_Kicker_Half.obj-70f21495ed402a3bf552b9ab4454214a.mesh", "res://.godot/imported/Quater_SML_Kicker_Half.obj-70f21495ed402a3bf552b9ab4454214a.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

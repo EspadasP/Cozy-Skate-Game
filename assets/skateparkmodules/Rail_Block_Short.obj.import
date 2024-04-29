@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhy2so5mqeiyb"
+path="res://.godot/imported/Rail_Block_Short.obj-d8dd1a3db230c41675e84b173b2537c1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Rail_Block_Short.obj-d8dd1a3db230c41675e84b173b2537c1.mesh"]
+
+source_file="res://assets/skateparkmodules/Rail_Block_Short.obj"
+dest_files=["res://.godot/imported/Rail_Block_Short.obj-d8dd1a3db230c41675e84b173b2537c1.mesh", "res://.godot/imported/Rail_Block_Short.obj-d8dd1a3db230c41675e84b173b2537c1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

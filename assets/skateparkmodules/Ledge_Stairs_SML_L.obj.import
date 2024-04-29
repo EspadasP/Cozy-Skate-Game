@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djghl3svp3qwj"
+path="res://.godot/imported/Ledge_Stairs_SML_L.obj-9478d091133e0359a694ef6eb31d886b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Ledge_Stairs_SML_L.obj-9478d091133e0359a694ef6eb31d886b.mesh"]
+
+source_file="res://assets/skateparkmodules/Ledge_Stairs_SML_L.obj"
+dest_files=["res://.godot/imported/Ledge_Stairs_SML_L.obj-9478d091133e0359a694ef6eb31d886b.mesh", "res://.godot/imported/Ledge_Stairs_SML_L.obj-9478d091133e0359a694ef6eb31d886b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

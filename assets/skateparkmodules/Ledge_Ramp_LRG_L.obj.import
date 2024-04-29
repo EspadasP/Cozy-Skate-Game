@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cnj6x6hq7e6x8"
+path="res://.godot/imported/Ledge_Ramp_LRG_L.obj-c240b091b704bae2f7502c0dfb7eb458.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Ledge_Ramp_LRG_L.obj-c240b091b704bae2f7502c0dfb7eb458.mesh"]
+
+source_file="res://assets/skateparkmodules/Ledge_Ramp_LRG_L.obj"
+dest_files=["res://.godot/imported/Ledge_Ramp_LRG_L.obj-c240b091b704bae2f7502c0dfb7eb458.mesh", "res://.godot/imported/Ledge_Ramp_LRG_L.obj-c240b091b704bae2f7502c0dfb7eb458.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

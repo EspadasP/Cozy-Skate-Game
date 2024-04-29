@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ce3kvjoq21p7i"
+path="res://.godot/imported/Quater_LRG_Straight.obj-21ea79ae54388793095cc9bf41167c20.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Quater_LRG_Straight.obj-21ea79ae54388793095cc9bf41167c20.mesh"]
+
+source_file="res://assets/skateparkmodules/Quater_LRG_Straight.obj"
+dest_files=["res://.godot/imported/Quater_LRG_Straight.obj-21ea79ae54388793095cc9bf41167c20.mesh", "res://.godot/imported/Quater_LRG_Straight.obj-21ea79ae54388793095cc9bf41167c20.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

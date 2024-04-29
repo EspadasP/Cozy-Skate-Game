@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dam1afb4ec7hx"
+path="res://.godot/imported/Ground_10x10.obj-848a5d725a44a720ff2c1962d14c2cfb.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Ground_10x10.obj-848a5d725a44a720ff2c1962d14c2cfb.mesh"]
+
+source_file="res://assets/skateparkmodules/Ground_10x10.obj"
+dest_files=["res://.godot/imported/Ground_10x10.obj-848a5d725a44a720ff2c1962d14c2cfb.mesh", "res://.godot/imported/Ground_10x10.obj-848a5d725a44a720ff2c1962d14c2cfb.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

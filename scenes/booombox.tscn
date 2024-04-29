@@ -1,0 +1,233 @@
+[gd_scene load_steps=8 format=3 uid="uid://eglfbptbfg0l"]
+
+[ext_resource type="PackedScene" uid="uid://dnn5l3j0adstd" path="res://assets/skatepark/Booombox.glb" id="1_i6s8b"]
+[ext_resource type="Script" path="res://scenes/booombox.gd" id="2_cvboo"]
+
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ap80"]
+albedo_color = Color(1, 0.811765, 0.0509804, 1)
+metallic_specular = 0.62
+roughness = 0.0
+
+[sub_resource type="Animation" id="Animation_l35cu"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Boombox_Circle_002:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Boombox_Circle_002:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("soundwaves/CSGBox3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 10.068, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("soundwaves/CSGBox3D2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-3.10767, 9.02896, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("soundwaves/CSGBox3D3:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(3.29585, 9.2498, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("soundwaves/CSGBox3D4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(6.7081, 8.48263, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("soundwaves/CSGBox3D5:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-5.99385, 8.22849, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_qq7sb"]
+resource_name = "soundanimation"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Boombox_Circle_002:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.688812, 0), Vector3(0, 1.06204, 0), Vector3(0, 1.40548, 0), Vector3(0, 0.299242, 0), Vector3(0, 0.697232, 0), Vector3(0, 2.65125, 0), Vector3(0, 3.20399, 0), Vector3(0, 1.66328, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("Boombox_Circle_002:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0, 0.15708), Vector3(0, 0, 0.244346), Vector3(0, 0, 0.0698132), Vector3(0, 0, -0.0698132), Vector3(0, 0, -0.15708), Vector3(0, 0, -0.244346), Vector3(0, 0, -0.0174533), Vector3(0, 0, 0.0698132), Vector3(0, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("soundwaves/CSGBox3D:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 10.068, 0), Vector3(0, 9.34056, 0), Vector3(0, 10.5222, 0), Vector3(0, 9.98275, 0), Vector3(0, 10.442, 0), Vector3(0, 9.50178, 0), Vector3(0, 12.4513, 0), Vector3(0, 12.1256, 0), Vector3(0, 10.5618, 0), Vector3(0, 10.068, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("soundwaves/CSGBox3D2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-3.10767, 9.02896, 0), Vector3(-3.10767, 9.77926, 0), Vector3(-3.10767, 10.1291, 0), Vector3(-3.10767, 10.6225, 0), Vector3(-3.10767, 8.53744, 0), Vector3(-4.39076, 10.9154, 0), Vector3(-4.13414, 10.8758, 0), Vector3(-3.60739, 12.1023, 0), Vector3(-4.45378, 11.5506, 0), Vector3(-3.10767, 9.02896, 0)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("soundwaves/CSGBox3D3:position")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(3.29585, 9.2498, 0), Vector3(3.29585, 9.0634, 0), Vector3(3.29585, 10.1227, 0), Vector3(3.29585, 9.30281, 0), Vector3(3.29585, 9.92367, 0), Vector3(3.8361, 10.6217, 0), Vector3(4.33583, 12.0356, 0), Vector3(4.07583, 12.9599, 0), Vector3(3.81584, 10.5076, 0), Vector3(3.29585, 9.2498, 0)]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("soundwaves/CSGBox3D4:position")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(6.7081, 8.48263, 0), Vector3(6.7081, 8.48263, 0), Vector3(6.7081, 7.95075, 0), Vector3(6.7081, 9.83917, 0), Vector3(6.7081, 7.76632, 0), Vector3(6.7081, 8.56102, 0), Vector3(8.05871, 8.20769, 0), Vector3(7.58601, 10.5049, 0), Vector3(7.29337, 11.7217, 0), Vector3(6.7081, 8.48263, 0)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("soundwaves/CSGBox3D5:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.5, 0.6, 0.7, 0.8, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-5.99385, 8.22849, 0), Vector3(-5.99385, 7.27147, 0), Vector3(-5.99385, 7.84585, 0), Vector3(-5.99385, 8.54187, 0), Vector3(-5.99385, 7.79195, 0), Vector3(-7.20941, 8.47248, 0), Vector3(-8.45198, 11.5301, 0), Vector3(-7.83745, 9.35409, 0), Vector3(-7.22292, 9.78926, 0), Vector3(-5.99385, 8.22849, 0)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_05nxg"]
+_data = {
+"RESET": SubResource("Animation_l35cu"),
+"soundanimation": SubResource("Animation_qq7sb")
+}
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_pvl6l"]
+size = Vector3(1.79742, 1.77167, 1.47583)
+
+[node name="Booombox" instance=ExtResource("1_i6s8b")]
+transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+script = ExtResource("2_cvboo")
+
+[node name="soundwaves" type="Node3D" parent="." index="1"]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="soundwaves" index="0"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 10.068, 0)
+size = Vector3(1, 4.35754, 1)
+material = SubResource("StandardMaterial3D_5ap80")
+
+[node name="CSGBox3D2" type="CSGBox3D" parent="soundwaves" index="1"]
+transform = Transform3D(0.940603, -0.33951, 0, 0.33951, 0.940603, 0, 0, 0, 1, -3.10767, 9.02896, 0)
+size = Vector3(1, 4.35754, 1)
+material = SubResource("StandardMaterial3D_5ap80")
+
+[node name="CSGBox3D3" type="CSGBox3D" parent="soundwaves" index="2"]
+transform = Transform3D(0.928693, 0.370849, 0, -0.370849, 0.928693, 0, 0, 0, 1, 3.29585, 9.2498, 0)
+size = Vector3(1, 4.35754, 1)
+material = SubResource("StandardMaterial3D_5ap80")
+
+[node name="CSGBox3D4" type="CSGBox3D" parent="soundwaves" index="3"]
+transform = Transform3D(0.860351, 0.509702, 0, -0.509702, 0.860351, 0, 0, 0, 1, 6.7081, 8.48263, 0)
+size = Vector3(1, 4.35754, 1)
+material = SubResource("StandardMaterial3D_5ap80")
+
+[node name="CSGBox3D5" type="CSGBox3D" parent="soundwaves" index="4"]
+transform = Transform3D(0.830401, -0.557166, 0, 0.557166, 0.830401, 0, 0, 0, 1, -5.99385, 8.22849, 0)
+size = Vector3(1, 4.35754, 1)
+material = SubResource("StandardMaterial3D_5ap80")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="." index="2"]
+libraries = {
+"": SubResource("AnimationLibrary_05nxg")
+}
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3"]
+transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0.194427, 5.54907, 0.315308)
+shape = SubResource("BoxShape3D_pvl6l")

@@ -1,8 +1,37 @@
-[gd_scene load_steps=9 format=3 uid="uid://bp0um7g41pwaa"]
+[gd_scene load_steps=16 format=3 uid="uid://bp0um7g41pwaa"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_2tdto"]
 [ext_resource type="PackedScene" uid="uid://g85m1wtp6cvv" path="res://assets/skatepark/skateboard.glb" id="1_ohcpc"]
 [ext_resource type="PackedScene" uid="uid://drdeatoqtkytb" path="res://assets/skatepark/character-skate-boy.glb" id="2_l6hil"]
+[ext_resource type="PackedScene" uid="uid://dkkrx15ybwjrg" path="res://assets/skatepark/Clouds.glb" id="4_kv53e"]
+
+[sub_resource type="Animation" id="Animation_0dsgv"]
+resource_name = "360ShoveIt"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(-4.54747e-13, -1.5708, 4.46638e-06), Vector3(0, -3.14159, 0), Vector3(0, -4.71239, 0), Vector3(0, -6.28319, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../character-skate-boy2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
 
 [sub_resource type="Animation" id="Animation_237yw"]
 resource_name = "360flip"
@@ -30,6 +59,46 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, -0.785398, 0.785398), Vector3(0, -2.35619, 2.35619), Vector3(0, -3.14159, 3.14159), Vector3(0, -3.92699, 3.92699), Vector3(0, -4.71239, 4.71239), Vector3(0, -5.49779, 5.49779), Vector3(0, -6.28319, 6.28319)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_b0l03"]
+resource_name = "Impossible"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(0, -0.0470296, 0), Vector3(0, -0.0878777, 0), Vector3(0, 0.0124427, 0), Vector3(0, 0.095, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(1.5708, 0, -0.785398), Vector3(3.14159, 0, -0.785398), Vector3(4.71239, 0, -0.523599), Vector3(6.28319, 0, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_oy4ou"]
@@ -59,6 +128,194 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 0, 0.785398), Vector3(0, 0, 1.5708), Vector3(0, 0, 3.14159), Vector3(0, 0, 4.71239), Vector3(0, 0, 5.23599), Vector3(0, 0, 6.28319)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c7mow"]
+resource_name = "Manual"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 4.46638e-06), Vector3(0.261799, 0, 0), Vector3(0.349066, 0, 0), Vector3(0.261799, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.135106, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.095, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(-2.66454e-15, 1.5708, 0.234084), Vector3(-4.52969e-15, 1.5708, 0.329082), Vector3(-4.40567e-15, 1.5708, 0.282551), Vector3(0, 1.5708, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.4, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.124953, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.125, 0.044)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Dust:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Dust:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.02, 0.02, 0.02), Vector3(0.03, 0.03, 0.03), Vector3(0.0509311, 0.0620408, 0.035), Vector3(0.07, 0.08, 0.032), Vector3(0.05, 0.05, 0.05), Vector3(0.02, 0.02, 0.02)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Dust:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.1, 0.2, 0.3, 0.4, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-4.21575e-08, 0.0496645, 0.399144), Vector3(-4.07346e-08, 0.0124615, 0.431696), Vector3(-3.32135e-08, 0.0159493, 0.60376), Vector3(-2.68103e-08, 0.0705913, 0.750247), Vector3(-3.13839e-08, -0.0154407, 0.645613), Vector3(-3.6974e-08, -0.110773, 0.517728)]
+}
+
+[sub_resource type="Animation" id="Animation_p8cby"]
+resource_name = "Nosemanual"
+length = 0.7
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 4.46638e-06), Vector3(-0.261799, 0, 0), Vector3(-0.349066, 0, 0), Vector3(-0.261799, 0, 0), Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.135106, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.095, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, -0.233874), Vector3(0, 1.5708, -0.329867), Vector3(0, 1.5708, -0.282743), Vector3(0, 1.5708, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.5, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.124953, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.125, 0.044)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Dust:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [false, true, true, true, false]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Dust:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0.2, 0.3, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0.02, 0.02, 0.02), Vector3(0.03, 0.03, 0.03), Vector3(0.04, 0.04, 0.04), Vector3(0.02, 0.02, 0.02), Vector3(0.02, 0.02, 0.02)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Dust:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0.2, 0.3, 0.5, 0.6, 0.7),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-4.69345e-08, 0.0496645, 0.28986), Vector3(-4.56132e-08, 0.0124615, 0.320087), Vector3(-4.25641e-08, 0.0333882, 0.389843), Vector3(-4.25641e-08, -0.0154407, 0.389843), Vector3(-3.89051e-08, -0.110773, 0.473549)]
+}
 
 [sub_resource type="Animation" id="Animation_fu8xb"]
 length = 0.001
@@ -86,29 +343,152 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.124953, 0.0442358)]
+}
+tracks/4/type = "value"
+tracks/4/imported = false
+tracks/4/enabled = true
+tracks/4/path = NodePath("../Dust:visible")
+tracks/4/interp = 1
+tracks/4/loop_wrap = true
+tracks/4/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [true]
+}
+tracks/5/type = "value"
+tracks/5/imported = false
+tracks/5/enabled = true
+tracks/5/path = NodePath("../Dust:scale")
+tracks/5/interp = 1
+tracks/5/loop_wrap = true
+tracks/5/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0.02, 0.02, 0.02)]
+}
+tracks/6/type = "value"
+tracks/6/imported = false
+tracks/6/enabled = true
+tracks/6/path = NodePath("../Dust:position")
+tracks/6/interp = 1
+tracks/6/loop_wrap = true
+tracks/6/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(-4.21575e-08, 0.0496645, 0.399144)]
+}
+
+[sub_resource type="Animation" id="Animation_qxrv6"]
+resource_name = "ShoveIt"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 4.46638e-06), Vector3(-4.54747e-13, -1.5708, 4.46638e-06), Vector3(0, -3.14159, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../character-skate-boy2:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.6),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_ka76f"]
+resource_name = "VarialHeel"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(0, 0.0239938, 0), Vector3(0, 0.0239938, 0), Vector3(0, -0.00839393, 0), Vector3(0, 0.095, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0, 0), Vector3(0, 0.785398, -1.5708), Vector3(0, 1.5708, -3.14159), Vector3(0, 2.35619, -4.71239), Vector3(0, 3.14159, -6.28319)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2ydnm"]
 _data = {
+"360ShoveIt": SubResource("Animation_0dsgv"),
 "360flip": SubResource("Animation_237yw"),
+"Impossible": SubResource("Animation_b0l03"),
 "Kickflip": SubResource("Animation_oy4ou"),
-"RESET": SubResource("Animation_fu8xb")
+"Manual": SubResource("Animation_c7mow"),
+"Nosemanual": SubResource("Animation_p8cby"),
+"RESET": SubResource("Animation_fu8xb"),
+"ShoveIt": SubResource("Animation_qxrv6"),
+"VarialHeel": SubResource("Animation_ka76f")
 }
 
-[sub_resource type="CylinderShape3D" id="CylinderShape3D_5hddf"]
-height = 0.771933
-radius = 0.302785
+[sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2q6um"]
+radius = 0.239227
+height = 0.843773
 
 [node name="Player" type="CharacterBody3D"]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.0371182, 0)
 script = ExtResource("1_2tdto")
 
 [node name="DeckPivot" type="Node3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.0951778, 0)
 
 [node name="skateboard2" parent="DeckPivot" instance=ExtResource("1_ohcpc")]
-transform = Transform3D(-1, 0, -2.53518e-06, 0, 1, 0, 2.53518e-06, 0, -1, 0, -0.0951778, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, -0.0951778, 0)
 
 [node name="character-skate-boy2" parent="." instance=ExtResource("2_l6hil")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 0, 0.124953, 0.0442358)
+transform = Transform3D(-3.61999e-06, 0, 1, 0, 1, 0, -1, 0, -3.61999e-06, 0, 0.124953, 0.0442358)
 
 [node name="Tricks" type="Node3D" parent="."]
 
@@ -119,10 +499,15 @@ libraries = {
 
 [node name="Timer" type="Timer" parent="Tricks"]
 
+[node name="ManualTimer" type="Timer" parent="Tricks"]
+wait_time = 4.0
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.413878, 0)
-shape = SubResource("CylinderShape3D_5hddf")
+shape = SubResource("CapsuleShape3D_2q6um")
 
-[node name="RayCast3D" type="RayCast3D" parent="."]
+[node name="Dust" parent="." instance=ExtResource("4_kv53e")]
+transform = Transform3D(-9.51091e-10, -1.99502e-10, -0.02, 0.00485437, 0.0194019, -4.24383e-10, 0.0194019, -0.00485437, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
+[connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]

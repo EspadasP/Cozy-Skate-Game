@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bj14f6a36plge"
+path="res://.godot/imported/Ramp_Half_5_Left.obj-bef49153377de0c99e159805ae4680e1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/Ramp_Half_5_Left.obj-bef49153377de0c99e159805ae4680e1.mesh"]
+
+source_file="res://assets/skateparkmodules/Ramp_Half_5_Left.obj"
+dest_files=["res://.godot/imported/Ramp_Half_5_Left.obj-bef49153377de0c99e159805ae4680e1.mesh", "res://.godot/imported/Ramp_Half_5_Left.obj-bef49153377de0c99e159805ae4680e1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
