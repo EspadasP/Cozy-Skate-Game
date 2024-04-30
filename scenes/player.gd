@@ -12,6 +12,7 @@ var holding_manual = false
 var can_manual = true
 var can_nosemanual = true
 
+signal grindout
 @onready var text_label = get_node("../UI/Label")
 
 func _ready():
@@ -126,6 +127,7 @@ func trick():
 	$Tricks/Timer.start()
 	trickeable = false
 	holding_manual = false
+	emit_signal("grindout")
 
 
 func _on_timer_timeout():

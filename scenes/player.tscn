@@ -477,7 +477,7 @@ _data = {
 radius = 0.239227
 height = 0.843773
 
-[node name="Player" type="CharacterBody3D"]
+[node name="Player" type="CharacterBody3D" groups=["player"]]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 0, 0.0371182, 0)
 script = ExtResource("1_2tdto")
 
@@ -507,7 +507,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.413878, 0)
 shape = SubResource("CapsuleShape3D_2q6um")
 
 [node name="Dust" parent="." instance=ExtResource("4_kv53e")]
-transform = Transform3D(-9.51091e-10, -1.99502e-10, -0.02, 0.00485437, 0.0194019, -4.24383e-10, 0.0194019, -0.00485437, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
+transform = Transform3D(-9.51092e-10, -1.99503e-10, -0.02, 0.00485438, 0.0194019, -4.24385e-10, 0.0194019, -0.00485438, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]
