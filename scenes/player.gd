@@ -16,7 +16,7 @@ signal grindout
 @onready var text_label = get_node("../UI/Label")
 
 func _ready():
-	floor_max_angle = deg_to_rad(90)
+	floor_max_angle = deg_to_rad(70)
 	
 func _physics_process(delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -27,6 +27,7 @@ func _physics_process(delta):
 		rotation.y = lerp_angle(rotation.y, desired_rotation, ROTATION_FORCE * delta)
 		if is_on_floor():
 			_tilt()
+	
 	
 
 	
@@ -136,3 +137,11 @@ func _on_timer_timeout():
 
 func _on_manual_timer_timeout():
 	holding_manual = false
+
+func play_grind():
+	$Tricks/AnimationPlayerGrinds.play("boardslide")
+	text_label.update_label_text("BOARDSLIDE")
+
+func stop_grind():
+	$Tricks/AnimationPlayerGrinds.stop()
+	#$Tricks/AnimationPlayerGrinds.play("returnposition")

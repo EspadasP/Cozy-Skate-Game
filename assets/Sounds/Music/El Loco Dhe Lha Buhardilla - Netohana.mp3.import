@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://baotguphlf4ve"
+path="res://.godot/imported/El Loco Dhe Lha Buhardilla - Netohana.mp3-7dcceab47177a3f6ef7e0e3ada3900cc.mp3str"
+
+[deps]
+
+source_file="res://assets/Sounds/Music/El Loco Dhe Lha Buhardilla - Netohana.mp3"
+dest_files=["res://.godot/imported/El Loco Dhe Lha Buhardilla - Netohana.mp3-7dcceab47177a3f6ef7e0e3ada3900cc.mp3str"]
+
+[params]
+
+loop=true
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

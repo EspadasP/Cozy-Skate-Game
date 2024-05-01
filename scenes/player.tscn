@@ -1,4 +1,4 @@
-[gd_scene load_steps=16 format=3 uid="uid://bp0um7g41pwaa"]
+[gd_scene load_steps=19 format=3 uid="uid://bp0um7g41pwaa"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_2tdto"]
 [ext_resource type="PackedScene" uid="uid://g85m1wtp6cvv" path="res://assets/skatepark/skateboard.glb" id="1_ohcpc"]
@@ -473,6 +473,42 @@ _data = {
 "VarialHeel": SubResource("Animation_ka76f")
 }
 
+[sub_resource type="Animation" id="Animation_ylsy8"]
+resource_name = "boardslide"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../character-skate-boy2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, -3.14159, 0), Vector3(-8.91669e-07, -3.14159, 0.261799), Vector3(0, -3.14159, -0.261799)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0.2, 0.4, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0.261799, 1.5708, -2.75853e-15), Vector3(-0.261799, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_c5c3o"]
+resource_name = "returnposition"
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_v27fh"]
+_data = {
+"boardslide": SubResource("Animation_ylsy8"),
+"returnposition": SubResource("Animation_c5c3o")
+}
+
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2q6um"]
 radius = 0.239227
 height = 0.843773
@@ -502,12 +538,17 @@ libraries = {
 [node name="ManualTimer" type="Timer" parent="Tricks"]
 wait_time = 4.0
 
+[node name="AnimationPlayerGrinds" type="AnimationPlayer" parent="Tricks"]
+libraries = {
+"": SubResource("AnimationLibrary_v27fh")
+}
+
 [node name="CollisionShape3D" type="CollisionShape3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.413878, 0)
 shape = SubResource("CapsuleShape3D_2q6um")
 
 [node name="Dust" parent="." instance=ExtResource("4_kv53e")]
-transform = Transform3D(-9.51092e-10, -1.99503e-10, -0.02, 0.00485438, 0.0194019, -4.24385e-10, 0.0194019, -0.00485438, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
+transform = Transform3D(-9.51092e-10, -1.99504e-10, -0.02, 0.0048544, 0.0194019, -4.24388e-10, 0.0194019, -0.0048544, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]

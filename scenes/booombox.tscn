@@ -1,7 +1,8 @@
-[gd_scene load_steps=8 format=3 uid="uid://eglfbptbfg0l"]
+[gd_scene load_steps=9 format=3 uid="uid://eglfbptbfg0l"]
 
 [ext_resource type="PackedScene" uid="uid://dnn5l3j0adstd" path="res://assets/skatepark/Booombox.glb" id="1_i6s8b"]
 [ext_resource type="Script" path="res://scenes/booombox.gd" id="2_cvboo"]
+[ext_resource type="AudioStream" uid="uid://baotguphlf4ve" path="res://assets/Sounds/Music/El Loco Dhe Lha Buhardilla - Netohana.mp3" id="3_x73by"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_5ap80"]
 albedo_color = Color(1, 0.811765, 0.0509804, 1)
@@ -231,3 +232,10 @@ libraries = {
 [node name="CollisionShape3D" type="CollisionShape3D" parent="." index="3"]
 transform = Transform3D(9, 0, 0, 0, 9, 0, 0, 0, 9, 0.194427, 5.54907, 0.315308)
 shape = SubResource("BoxShape3D_pvl6l")
+
+[node name="AudioStreamPlayer3D" type="AudioStreamPlayer3D" parent="." index="4"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 0, 47.0817, 89.9909)
+stream = ExtResource("3_x73by")
+max_db = 0.0
+autoplay = true
+max_distance = 17.0

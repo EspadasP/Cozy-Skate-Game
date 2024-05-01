@@ -17,7 +17,7 @@ _data = {
 point_count = 2
 
 [node name="GrindableObject" type="Node3D"]
-transform = Transform3D(2.98023e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, 1.22189e-07, 2.50499, 0.564014, 1.61411)
+transform = Transform3D(2.98023e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, 1.22189e-07, 0, 0, 0)
 script = ExtResource("2_cjb5l")
 
 [node name="CollisionGrind" type="Area3D" parent="."]
@@ -32,12 +32,12 @@ size = Vector3(1, 1, 1.99524)
 material = SubResource("StandardMaterial3D_8u3a5")
 
 [node name="Path3D" type="Path3D" parent="."]
-transform = Transform3D(1, 0, -1.3113e-07, 0, 1, 0, 2.90755e-08, 0, 0.268293, 0, 0, 0)
+transform = Transform3D(1, 0, -1.3113e-07, 0, 1, 0, 2.90755e-08, 0, 0.268293, 0.313245, 0, 2.27693e-09)
 curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.999914, 9.44028e-05, -0.011201, -3.6379e-12, 0.999961, 0.00842742, 0.0112014, -0.00842705, 0.99988, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999886, -0.000168972, -0.0134504, 1.45516e-11, 0.999902, -0.0125609, 0.0134516, 0.01256, 0.999793, -0.374288, 0.599532, 1.78809)
 loop = false
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Path3D/PathFollow3D"]
@@ -47,12 +47,12 @@ transform = Transform3D(0.998793, -0.0356725, 0.0337832, 0.034465, 0.99877, 0.03
 transform = Transform3D(0.353377, 7.45058e-09, 1.67638e-08, -1.49012e-08, 0.973875, -9.0804e-09, -7.45058e-09, -2.80561e-08, 0.705825, 0, 0, 0)
 
 [node name="Path3Dleftdown" type="Path3D" parent="."]
-transform = Transform3D(-1, 0, 2.34549e-08, 0, 1, 0, -8.74228e-08, 0, -0.268293, 0, 0, 0)
+transform = Transform3D(-1, 0, 2.34549e-08, 0, 1, 0, -8.74228e-08, 0, -0.268293, -0.382721, 0, -2.78194e-09)
 curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3Dleftdown"]
-transform = Transform3D(0.995326, -0.042054, -0.0866706, 1.8626e-09, 0.899685, -0.436525, 0.0963339, 0.434503, 0.895483, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999887, -0.000168974, -0.0134505, 1.45516e-11, 0.999916, -0.0125611, 0.0134516, 0.0125602, 0.999806, -0.374288, 0.599532, 1.78809)
 loop = false
 
 [node name="RigidBody3D" type="RigidBody3D" parent="Path3Dleftdown/PathFollow3D"]

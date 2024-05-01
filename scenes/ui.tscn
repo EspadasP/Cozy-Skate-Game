@@ -2,7 +2,7 @@
 
 [ext_resource type="FontFile" uid="uid://bc1mnhoqxgmx5" path="res://assets/UI/conthrax-sb.otf" id="1_xchk3"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="2_7ftxq"]
-[ext_resource type="Texture2D" uid="uid://bho0yth4ye3wp" path="res://assets/UI/weno.png" id="3_yb16y"]
+[ext_resource type="Texture2D" uid="uid://b707nghg48mhc" path="res://assets/UI/buttonset1.png" id="3_am0c0"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
@@ -44,7 +44,7 @@ offset_top = 24.0
 offset_right = -21.0
 offset_bottom = 124.0
 grow_horizontal = 0
-texture = ExtResource("3_yb16y")
+texture = ExtResource("3_am0c0")
 stretch_mode = 5
 
 [connection signal="timeout" from="Label/CleanTricksTextTimer" to="Label" method="_on_clean_tricks_text_timer_timeout"]

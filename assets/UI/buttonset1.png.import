@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://bho0yth4ye3wp"
-path="res://.godot/imported/weno.png-cf3cc6d0d9eefeec50926a17ec5da6d5.ctex"
+uid="uid://b707nghg48mhc"
+path="res://.godot/imported/buttonset1.png-96a1f9b22bced8136247fa2d507412bd.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://assets/UI/weno.png"
-dest_files=["res://.godot/imported/weno.png-cf3cc6d0d9eefeec50926a17ec5da6d5.ctex"]
+source_file="res://assets/UI/buttonset1.png"
+dest_files=["res://.godot/imported/buttonset1.png-96a1f9b22bced8136247fa2d507412bd.ctex"]
 
 [params]
 
