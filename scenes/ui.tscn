@@ -33,6 +33,7 @@ autowrap_mode = 3
 script = ExtResource("2_7ftxq")
 
 [node name="CleanTricksTextTimer" type="Timer" parent="Label"]
+wait_time = 5.0
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

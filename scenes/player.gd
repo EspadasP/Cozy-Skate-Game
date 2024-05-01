@@ -1,7 +1,7 @@
 extends CharacterBody3D
 #
-const SPEED = 5
-const ACCELERATION = 6
+const SPEED = 6
+const ACCELERATION = 9
 const ROTATION_FORCE = 7
 const JUMP_FORCE = 20  # Adjust this value to control the jump height
 const GRAVITY = -50
@@ -16,7 +16,7 @@ signal grindout
 @onready var text_label = get_node("../UI/Label")
 
 func _ready():
-	floor_max_angle = deg_to_rad(70)
+	floor_max_angle = deg_to_rad(89)
 	
 func _physics_process(delta):
 	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
@@ -75,8 +75,17 @@ func _process(delta):
 			
 	if trickeable:
 		
-		if Input.is_action_just_pressed("ollie"):
+		if Input.is_action_just_pressed("ollie") and !Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
+			$Tricks/AnimationPlayer.play("ollie")
 			trick()
+			
+		if Input.is_action_just_pressed("ollie") and Input.is_action_pressed("LB"):
+			$Tricks/AnimationPlayer.play("ollie360")
+			trick()
+		
+		#if Input.is_action_just_pressed("ollie") and Input.is_action_pressed("RB"):
+			#$Tricks/AnimationPlayer.play("backflip")
+			#trick()
 		
 		
 		if Input.is_action_just_pressed("flip_trick") and !Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
@@ -115,13 +124,30 @@ func _process(delta):
 
 func _tilt():
 		var normal = get_floor_normal()
-		# Calculate rotation angles around X and Z axesw
-		var rotation_angle_x = atan2(normal.x, normal.y)  # Ángulo alrededor del eje X
-		var rotation_angle_z = atan2(normal.x, normal.y)  # Ángulo alrededor del eje Z
+		#print(normal)
+		#transform.basis.y = normal
+		var target_basis = Basis()
+		target_basis.y = normal
+		transform.basis.y = transform.basis.y.lerp(target_basis.y, 0.2)
+	
+		
+		
+		#antiguo metodo de tilt 
+		#var rotation_angle_x = atan2(normal.x, normal.y)  # Ángulo alrededor del eje X
+		#var rotation_angle_z = atan2(normal.z, normal.y)  # Ángulo alrededor del eje Z
+		#
 		
 		# Aplicar la rotación al personaje
-		rotation.x = rotation_angle_x
-		rotation.z = rotation_angle_z
+		#if velocity.x > 0:
+			#rotation.x = -rotation_angle_x
+		#else:
+			#rotation.x = rotation_angle_x
+		#
+		#if velocity.z > 0:
+			#rotation.z = -rotation_angle_z
+		#else:
+			#rotation.z = rotation_angle_z
+		
 
 func trick():
 	is_jumping = true
@@ -139,8 +165,8 @@ func _on_manual_timer_timeout():
 	holding_manual = false
 
 func play_grind():
-	$Tricks/AnimationPlayerGrinds.play("boardslide")
-	text_label.update_label_text("BOARDSLIDE")
+	$Tricks/AnimationPlayerGrinds.play("nosegrind")
+	text_label.update_label_text("NOSEGRIND")
 
 func stop_grind():
 	$Tricks/AnimationPlayerGrinds.stop()

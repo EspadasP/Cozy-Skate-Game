@@ -45,7 +45,7 @@ func grindout():
 	grinding = false
 
 func _on_collision_grind_body_entered(body):
-	if Input.is_action_pressed("grind") or Input.is_action_just_pressed("grind") or Input.is_action_just_released("grind"):
+	if Input.is_action_just_pressed("grind") or Input.is_action_pressed("grind") or  Input.is_action_just_released("grind"):
 		$Path3D/PathFollow3D.set_process(true)
 		$Path3Dleftdown/PathFollow3D.set_process(true)
 		$Path3Dleftdown/PathFollow3D.progress = 0
@@ -57,12 +57,8 @@ func _on_collision_grind_body_entered(body):
 
 func path_following(path_follower, path):
 	if path_follower:
-		#var player_global_position = skater[0].global_transform.origin
-		#var closest_point = path.curve.get_closest_point(player_global_position)
-		#var local_player_position = path.to_local(player_global_position)
-		#player.global_transform.origin = closest_point
 		var destination_position = path_follower.get_global_transform().origin 
-		player.global_transform.origin = destination_position
+		player.global_transform.origin = player.global_transform.origin.lerp(destination_position, 0.8)
 				
 	 
 

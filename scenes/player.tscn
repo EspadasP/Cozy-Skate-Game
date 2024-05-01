@@ -1,4 +1,4 @@
-[gd_scene load_steps=19 format=3 uid="uid://bp0um7g41pwaa"]
+[gd_scene load_steps=22 format=3 uid="uid://bp0um7g41pwaa"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_2tdto"]
 [ext_resource type="PackedScene" uid="uid://g85m1wtp6cvv" path="res://assets/skatepark/skateboard.glb" id="1_ohcpc"]
@@ -99,6 +99,18 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(1.5708, 0, -0.785398), Vector3(3.14159, 0, -0.785398), Vector3(4.71239, 0, -0.523599), Vector3(6.28319, 0, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 0)]
 }
 
 [sub_resource type="Animation" id="Animation_oy4ou"]
@@ -459,6 +471,138 @@ tracks/1/keys = {
 "update": 0,
 "values": [Vector3(0, 0, 0), Vector3(0, 0.785398, -1.5708), Vector3(0, 1.5708, -3.14159), Vector3(0, 2.35619, -4.71239), Vector3(0, 3.14159, -6.28319)]
 }
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.6),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector3(0, -4.71239, 0), Vector3(0, -4.71239, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_j2cqy"]
+resource_name = "ollie"
+length = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 0.0951778, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_w5rny"]
+resource_name = "ollie360"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../character-skate-boy2:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 0, 0), Vector3(0, -1.5708, 0), Vector3(0, -3.14159, 0), Vector3(0, -4.71239, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.4, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(6.28319, 0, 0), Vector3(6.28319, -1.5708, 0), Vector3(6.28319, -3.14159, 0), Vector3(6.28319, -4.71239, 0), Vector3(6.28319, -6.28319, 0)]
+}
+
+[sub_resource type="Animation" id="Animation_nsok2"]
+resource_name = "backflip"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(-1.83638e-08, 0.0390921, -0.420114), Vector3(0, 0.254765, 0), Vector3(3.65966e-09, 0.254765, 0.0837232)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 3.14159, -4.46638e-06), Vector3(-1.5708, 3.14159, 0), Vector3(0, 0, 3.14159), Vector3(1.5708, 0, 3.14159)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.155182, 0.0442358), Vector3(-1.78144e-08, 0, -0.363547), Vector3(0, 0.202561, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 1.58999), Vector3(0, 1.5708, 3.14159), Vector3(0, 1.5708, -1.5708)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2ydnm"]
 _data = {
@@ -470,7 +614,10 @@ _data = {
 "Nosemanual": SubResource("Animation_p8cby"),
 "RESET": SubResource("Animation_fu8xb"),
 "ShoveIt": SubResource("Animation_qxrv6"),
-"VarialHeel": SubResource("Animation_ka76f")
+"VarialHeel": SubResource("Animation_ka76f"),
+"backflip": SubResource("Animation_nsok2"),
+"ollie": SubResource("Animation_j2cqy"),
+"ollie360": SubResource("Animation_w5rny")
 }
 
 [sub_resource type="Animation" id="Animation_ylsy8"]
@@ -500,13 +647,61 @@ tracks/1/keys = {
 "values": [Vector3(0, 1.5708, 0), Vector3(0.261799, 1.5708, -2.75853e-15), Vector3(-0.261799, 1.5708, 0)]
 }
 
-[sub_resource type="Animation" id="Animation_c5c3o"]
-resource_name = "returnposition"
+[sub_resource type="Animation" id="Animation_eegv6"]
+resource_name = "nosegrind"
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:rotation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(-0.261799, 0, 0), Vector3(-0.349066, 0, 0), Vector3(-0.261799, 0, 0), Vector3(-0.261799, 0, 0), Vector3(-0.349066, 0, 0), Vector3(-0.261799, 0, 0)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:position")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.123406, 0), Vector3(0, 0.135106, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.123406, 0), Vector3(0, 0.135106, 0), Vector3(0, 0.123406, 0)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:rotation")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, -0.233874), Vector3(0, 1.5708, -0.329867), Vector3(0, 1.5708, -0.282743), Vector3(0, 1.5708, -0.233874), Vector3(0, 1.5708, -0.329867), Vector3(0, 1.5708, -0.282743)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:position")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.4, 0.6, 0.9, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358), Vector3(0, 0.155182, 0.0442358)]
+}
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_v27fh"]
 _data = {
 "boardslide": SubResource("Animation_ylsy8"),
-"returnposition": SubResource("Animation_c5c3o")
+"nosegrind": SubResource("Animation_eegv6")
 }
 
 [sub_resource type="CapsuleShape3D" id="CapsuleShape3D_2q6um"]
@@ -548,7 +743,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.413878, 0)
 shape = SubResource("CapsuleShape3D_2q6um")
 
 [node name="Dust" parent="." instance=ExtResource("4_kv53e")]
-transform = Transform3D(-9.51092e-10, -1.99504e-10, -0.02, 0.0048544, 0.0194019, -4.24388e-10, 0.0194019, -0.0048544, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
+transform = Transform3D(-9.51093e-10, -1.99504e-10, -0.02, 0.00485441, 0.0194019, -4.24388e-10, 0.0194019, -0.00485441, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]

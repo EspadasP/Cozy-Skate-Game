@@ -5,6 +5,7 @@ extends Label
 func update_label_text(new_text: String):
 	if text.length() < 1:
 		text = new_text
+		clear_label_text()
 	else:
 		text += " + " + new_text
 
