@@ -1,19 +1,23 @@
 extends CharacterBody3D
-#
-const SPEED = 6
-const ACCELERATION = 9
+const SPEED = 9
+const ACCELERATION = 5
 const ROTATION_FORCE = 7
 const JUMP_FORCE = 20  # Adjust this value to control the jump height
 const GRAVITY = -50
 
+
+var counter = 0
 var is_jumping = false
 var trickeable = true
 var holding_manual = false
 var can_manual = true
 var can_nosemanual = true
+var scored_line = 0
+var mult = 1
+var isgrinding = false
 
 signal grindout
-@onready var text_label = get_node("../UI/Label")
+@onready var ui = get_node("../UI/Label")
 
 func _ready():
 	floor_max_angle = deg_to_rad(89)
@@ -46,13 +50,18 @@ func _physics_process(delta):
 	move_and_slide()
 
 func _process(delta):
-	
+	if is_on_floor() and !isgrinding and !holding_manual:
+		counter += 1
+		if counter > 5: #algunos frames delta se "cuelan" de modo que con el contador nos aseguramos de que realmente ha acabado la linea
+			end_line()
+	else:
+		counter = 0
 	if can_manual:
 		if Input.is_action_just_pressed("LT"):
 			holding_manual = true
 			can_nosemanual = false
 			$Tricks/ManualTimer.start()
-			text_label.update_label_text("MANUAL")
+			ui.update_label_text("MANUAL")
 		if Input.is_action_pressed("LT") and holding_manual:
 			$Tricks/AnimationPlayer.play("Manual")
 		if Input.is_action_just_released("LT"):
@@ -65,7 +74,7 @@ func _process(delta):
 			holding_manual = true
 			can_manual = false
 			$Tricks/ManualTimer.start()
-			text_label.update_label_text("NOSEMANUAL")
+			ui.update_label_text("NOSEMANUAL")
 		if Input.is_action_pressed("RT") and holding_manual:
 			$Tricks/AnimationPlayer.play("Nosemanual")
 		if Input.is_action_just_released("RT"):
@@ -77,46 +86,57 @@ func _process(delta):
 		
 		if Input.is_action_just_pressed("ollie") and !Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("ollie")
+			ui.update_label_text("OLLIE")
 			trick()
+			add_to_line(50)
 			
 		if Input.is_action_just_pressed("ollie") and Input.is_action_pressed("LB"):
 			$Tricks/AnimationPlayer.play("ollie360")
+			ui.update_label_text("OLLIE 360")
 			trick()
+			add_to_line(100)
 		
 		#if Input.is_action_just_pressed("ollie") and Input.is_action_pressed("RB"):
 			#$Tricks/AnimationPlayer.play("backflip")
 			#trick()
+			#add_to_line(150)
 		
 		
 		if Input.is_action_just_pressed("flip_trick") and !Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("Kickflip")
-			text_label.update_label_text("KICKFLIP")
+			ui.update_label_text("KICKFLIP")
 			trick()
+			add_to_line(100)
 			
 		if Input.is_action_just_pressed("shove_trick") and !Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("ShoveIt")
-			text_label.update_label_text("SHOVE-IT")
+			ui.update_label_text("SHOVE-IT")
 			trick()
+			add_to_line(100)
 		
 		if Input.is_action_just_pressed("shove_trick") and Input.is_action_pressed("LB"):
 			$Tricks/AnimationPlayer.play("360ShoveIt")
-			text_label.update_label_text("360 SHOVE-IT")
+			ui.update_label_text("360 SHOVE-IT")
 			trick()
+			add_to_line(200)
 		
 		if Input.is_action_just_pressed("flip_trick") and Input.is_action_pressed("LB"):
 			$Tricks/AnimationPlayer.play("VarialHeel")
-			text_label.update_label_text("VARIALHEEL")
+			ui.update_label_text("VARIALHEEL")
 			trick()
+			add_to_line(200)
 		
 		if Input.is_action_just_pressed("flip_trick") and Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("360flip")
-			text_label.update_label_text("360FLIP")
+			ui.update_label_text("360FLIP")
 			trick()
+			add_to_line(300)
 		
 		if Input.is_action_just_pressed("shove_trick") and Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("Impossible")
-			text_label.update_label_text("IMPOSSIBLE")
+			ui.update_label_text("IMPOSSIBLE")
 			trick()
+			add_to_line(300)
 		
 	
 	
@@ -124,11 +144,16 @@ func _process(delta):
 
 func _tilt():
 		var normal = get_floor_normal()
+		#print(velocity)
 		#print(normal)
-		#transform.basis.y = normal
+		#velocity += normal
+		#print(velocity)
+		
+		var actualSize = self.scale
 		var target_basis = Basis()
 		target_basis.y = normal
 		transform.basis.y = transform.basis.y.lerp(target_basis.y, 0.2)
+		self.scale = actualSize
 	
 		
 		
@@ -155,19 +180,35 @@ func trick():
 	trickeable = false
 	holding_manual = false
 	emit_signal("grindout")
+	
+
+func add_to_line(score):
+	if score == -1:
+		mult += 1
+	else:
+		scored_line += score
+	ui.update_label_score(scored_line, mult)	
+
+func end_line():
+	ui._on_clean_tricks_text_timer_timeout()
+	#save_score(scored_line, mult) #implementar guardado de linea
+	scored_line = 0
+	mult = 1
 
 
 func _on_timer_timeout():
 	trickeable = true
-
 
 func _on_manual_timer_timeout():
 	holding_manual = false
 
 func play_grind():
 	$Tricks/AnimationPlayerGrinds.play("nosegrind")
-	text_label.update_label_text("NOSEGRIND")
+	ui.update_label_text("NOSEGRIND")
+	add_to_line(-1) #el -1 indica que se añade un multiplicador
 
 func stop_grind():
 	$Tricks/AnimationPlayerGrinds.stop()
-	#$Tricks/AnimationPlayerGrinds.play("returnposition")
+
+func is_grinding(grinding):
+	isgrinding = grinding

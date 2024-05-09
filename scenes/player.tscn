@@ -484,6 +484,58 @@ tracks/2/keys = {
 "values": [Vector3(0, -4.71239, 0), Vector3(0, -4.71239, 0)]
 }
 
+[sub_resource type="Animation" id="Animation_nsok2"]
+resource_name = "backflip"
+length = 0.6
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("../DeckPivot:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.095, 0), Vector3(-1.83638e-08, 0.0390921, -0.420114), Vector3(0, 0.254765, 0), Vector3(3.65966e-09, 0.254765, 0.0837232)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath("../DeckPivot:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 3.14159, -4.46638e-06), Vector3(-1.5708, 3.14159, 0), Vector3(0, 0, 3.14159), Vector3(1.5708, 0, 3.14159)]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath("../character-skate-boy2:position")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 0.155182, 0.0442358), Vector3(-1.78144e-08, 0, -0.363547), Vector3(0, 0.202561, 0)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath("../character-skate-boy2:rotation")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
+"transitions": PackedFloat32Array(1, 1, 1, 1),
+"update": 0,
+"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 1.58999), Vector3(0, 1.5708, 3.14159), Vector3(0, 1.5708, -1.5708)]
+}
+
 [sub_resource type="Animation" id="Animation_j2cqy"]
 resource_name = "ollie"
 length = 0.1
@@ -550,58 +602,6 @@ tracks/1/keys = {
 "transitions": PackedFloat32Array(1, 1, 1, 1, 1),
 "update": 0,
 "values": [Vector3(6.28319, 0, 0), Vector3(6.28319, -1.5708, 0), Vector3(6.28319, -3.14159, 0), Vector3(6.28319, -4.71239, 0), Vector3(6.28319, -6.28319, 0)]
-}
-
-[sub_resource type="Animation" id="Animation_nsok2"]
-resource_name = "backflip"
-length = 0.6
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath("../DeckPivot:position")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0.095, 0), Vector3(-1.83638e-08, 0.0390921, -0.420114), Vector3(0, 0.254765, 0), Vector3(3.65966e-09, 0.254765, 0.0837232)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath("../DeckPivot:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 3.14159, -4.46638e-06), Vector3(-1.5708, 3.14159, 0), Vector3(0, 0, 3.14159), Vector3(1.5708, 0, 3.14159)]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath("../character-skate-boy2:position")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3),
-"transitions": PackedFloat32Array(1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 0.155182, 0.0442358), Vector3(-1.78144e-08, 0, -0.363547), Vector3(0, 0.202561, 0)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath("../character-skate-boy2:rotation")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.2, 0.3, 0.6),
-"transitions": PackedFloat32Array(1, 1, 1, 1),
-"update": 0,
-"values": [Vector3(0, 1.5708, 0), Vector3(0, 1.5708, 1.58999), Vector3(0, 1.5708, 3.14159), Vector3(0, 1.5708, -1.5708)]
 }
 
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_2ydnm"]
@@ -743,7 +743,7 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.413878, 0)
 shape = SubResource("CapsuleShape3D_2q6um")
 
 [node name="Dust" parent="." instance=ExtResource("4_kv53e")]
-transform = Transform3D(-9.51093e-10, -1.99504e-10, -0.02, 0.00485441, 0.0194019, -4.24388e-10, 0.0194019, -0.00485441, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
+transform = Transform3D(-9.51093e-10, -1.99504e-10, -0.02, 0.00485444, 0.0194019, -4.2439e-10, 0.0194019, -0.00485444, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]

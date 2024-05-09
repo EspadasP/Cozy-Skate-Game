@@ -33,7 +33,25 @@ autowrap_mode = 3
 script = ExtResource("2_7ftxq")
 
 [node name="CleanTricksTextTimer" type="Timer" parent="Label"]
-wait_time = 5.0
+
+[node name="Scorelabel" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 370.0
+offset_top = -30.0
+offset_right = 440.0
+offset_bottom = -7.0
+horizontal_alignment = 2
+autowrap_mode = 2
+
+[node name="MultLabel" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = 448.0
+offset_top = -38.0
+offset_right = 488.0
+offset_bottom = -3.0
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_font_sizes/font_size = 25
 
 [node name="TextureRect" type="TextureRect" parent="."]
 layout_mode = 1

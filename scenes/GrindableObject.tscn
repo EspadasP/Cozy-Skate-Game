@@ -38,7 +38,7 @@ curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.999886, -0.000168972, -0.0134504, 1.45516e-11, 0.999901, -0.0125609, 0.0134516, 0.01256, 0.999792, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999886, -0.000168972, -0.0134503, 1.45516e-11, 0.9999, -0.0125609, 0.0134516, 0.01256, 0.999791, -0.374288, 0.599532, 1.78809)
 loop = false
 
 [node name="RigidBody3D" type="CSGBox3D" parent="Path3D/PathFollow3D"]
@@ -50,7 +50,7 @@ curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3Dleftdown"]
-transform = Transform3D(0.999887, -0.000168974, -0.0134505, 1.45516e-11, 0.999915, -0.0125611, 0.0134516, 0.0125602, 0.999805, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999887, -0.000168974, -0.0134505, 1.45516e-11, 0.999914, -0.0125611, 0.0134516, 0.0125602, 0.999804, -0.374288, 0.599532, 1.78809)
 loop = false
 
 [node name="RigidBody3D" type="CSGBox3D" parent="Path3Dleftdown/PathFollow3D"]
