@@ -8,9 +8,13 @@ var score_count = 0
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	$PressA.visible = false
 	Reset_Timer()
 	$FinalScoreLabel.visible = false
-	$PressA.visible = false
+	score_count = 0
+	Controlautoload.final_score = -1
+	Controlautoload.current_score = 0
+	
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(_delta):
@@ -25,6 +29,7 @@ func _process(_delta):
 		$PressA.visible = true
 		
 	if Input.is_action_just_pressed("ollie") and $PressA.is_visible_in_tree():
+		$PressA.visible = false
 		get_tree().change_scene_to_file("res://scenes/main_menu.tscn")
 	
 	if Input.is_action_pressed("LB"):
