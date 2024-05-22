@@ -19,7 +19,7 @@ func _ready():
 	
 
 
-func _process(delta):
+func _process(_delta):
 	#print(grinding) 
 	if Input.is_action_just_pressed("flip_trick") or Input.is_action_just_pressed("shove_trick") or Input.is_action_just_pressed("ollie"):
 		grinding = false

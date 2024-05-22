@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cnnalu56cae5h"
+path="res://.godot/imported/crypt-small.obj-195401b57622afe88bcadb374efdea53.mesh"
+
+[deps]
+
+files=["res://.godot/imported/crypt-small.obj-195401b57622afe88bcadb374efdea53.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/crypt-small.obj"
+dest_files=["res://.godot/imported/crypt-small.obj-195401b57622afe88bcadb374efdea53.mesh", "res://.godot/imported/crypt-small.obj-195401b57622afe88bcadb374efdea53.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

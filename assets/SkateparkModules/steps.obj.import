@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c6dae2r2v57bv"
+path="res://.godot/imported/steps.obj-338fe43c2dc68cc25e968176fcd18e36.mesh"
+
+[deps]
+
+files=["res://.godot/imported/steps.obj-338fe43c2dc68cc25e968176fcd18e36.mesh"]
+
+source_file="res://assets/SkateparkModules/steps.obj"
+dest_files=["res://.godot/imported/steps.obj-338fe43c2dc68cc25e968176fcd18e36.mesh", "res://.godot/imported/steps.obj-338fe43c2dc68cc25e968176fcd18e36.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

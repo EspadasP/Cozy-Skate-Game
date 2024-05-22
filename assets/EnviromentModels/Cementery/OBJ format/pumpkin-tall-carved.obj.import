@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bsu0ywpjvrvbf"
+path="res://.godot/imported/pumpkin-tall-carved.obj-dad346f61e1dbf881986ab90ea660fcc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pumpkin-tall-carved.obj-dad346f61e1dbf881986ab90ea660fcc.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/pumpkin-tall-carved.obj"
+dest_files=["res://.godot/imported/pumpkin-tall-carved.obj-dad346f61e1dbf881986ab90ea660fcc.mesh", "res://.godot/imported/pumpkin-tall-carved.obj-dad346f61e1dbf881986ab90ea660fcc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

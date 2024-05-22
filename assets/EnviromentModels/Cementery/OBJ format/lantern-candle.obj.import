@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://4h0k5t2p51v4"
+path="res://.godot/imported/lantern-candle.obj-725277fc1d7cbc6fa7561922762ea3a0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lantern-candle.obj-725277fc1d7cbc6fa7561922762ea3a0.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/lantern-candle.obj"
+dest_files=["res://.godot/imported/lantern-candle.obj-725277fc1d7cbc6fa7561922762ea3a0.mesh", "res://.godot/imported/lantern-candle.obj-725277fc1d7cbc6fa7561922762ea3a0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dam1711my0p3x"
+path="res://.godot/imported/column-large.obj-3aa374c231e55a0379eb4480287e19a1.mesh"
+
+[deps]
+
+files=["res://.godot/imported/column-large.obj-3aa374c231e55a0379eb4480287e19a1.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/column-large.obj"
+dest_files=["res://.godot/imported/column-large.obj-3aa374c231e55a0379eb4480287e19a1.mesh", "res://.godot/imported/column-large.obj-3aa374c231e55a0379eb4480287e19a1.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

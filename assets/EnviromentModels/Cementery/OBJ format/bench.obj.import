@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://b60kxt4hy1jno"
+path="res://.godot/imported/bench.obj-5ff5559253ed7e24c2388828ca3aa540.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bench.obj-5ff5559253ed7e24c2388828ca3aa540.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/bench.obj"
+dest_files=["res://.godot/imported/bench.obj-5ff5559253ed7e24c2388828ca3aa540.mesh", "res://.godot/imported/bench.obj-5ff5559253ed7e24c2388828ca3aa540.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

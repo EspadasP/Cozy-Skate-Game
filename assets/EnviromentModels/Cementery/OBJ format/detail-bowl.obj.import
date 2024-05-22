@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dinfar8q8rxh0"
+path="res://.godot/imported/detail-bowl.obj-0c0d01cb0d72f65463ba773a426eccee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/detail-bowl.obj-0c0d01cb0d72f65463ba773a426eccee.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/detail-bowl.obj"
+dest_files=["res://.godot/imported/detail-bowl.obj-0c0d01cb0d72f65463ba773a426eccee.mesh", "res://.godot/imported/detail-bowl.obj-0c0d01cb0d72f65463ba773a426eccee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

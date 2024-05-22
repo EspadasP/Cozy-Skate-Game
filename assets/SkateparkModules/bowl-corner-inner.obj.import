@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bgpll6jiokyqq"
+path="res://.godot/imported/bowl-corner-inner.obj-772dd8d72d9c53872b4f91a7d6cd7ff7.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bowl-corner-inner.obj-772dd8d72d9c53872b4f91a7d6cd7ff7.mesh"]
+
+source_file="res://assets/SkateparkModules/bowl-corner-inner.obj"
+dest_files=["res://.godot/imported/bowl-corner-inner.obj-772dd8d72d9c53872b4f91a7d6cd7ff7.mesh", "res://.godot/imported/bowl-corner-inner.obj-772dd8d72d9c53872b4f91a7d6cd7ff7.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

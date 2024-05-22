@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://gjoy1wbtewja"
+path="res://.godot/imported/stone-wall.obj-6ec182bc4502bc84a2e6315a5a5be7ee.mesh"
+
+[deps]
+
+files=["res://.godot/imported/stone-wall.obj-6ec182bc4502bc84a2e6315a5a5be7ee.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/stone-wall.obj"
+dest_files=["res://.godot/imported/stone-wall.obj-6ec182bc4502bc84a2e6315a5a5be7ee.mesh", "res://.godot/imported/stone-wall.obj-6ec182bc4502bc84a2e6315a5a5be7ee.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

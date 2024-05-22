@@ -7,7 +7,7 @@ func _ready():
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if Input.is_action_just_pressed("shove_trick") and $AudioSliders.is_visible_in_tree():
 		$AudioSliders.visible = false
 		$PlayButton.grab_focus()

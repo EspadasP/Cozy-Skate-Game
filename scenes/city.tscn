@@ -1,16 +1,25 @@
-[gd_scene load_steps=14 format=3 uid="uid://br1wp1rlem0fm"]
+[gd_scene load_steps=23 format=3 uid="uid://br1wp1rlem0fm"]
 
-[ext_resource type="PackedScene" uid="uid://bafiyvwcxwntw" path="res://assets/Models/City/Building-g15lpKh4li.glb" id="1_6nil8"]
-[ext_resource type="PackedScene" uid="uid://b5ecqlrbdy60e" path="res://assets/Models/City/Building-bbH2Bg73qM.glb" id="2_dn5jf"]
-[ext_resource type="PackedScene" uid="uid://ba07cw6w0fe3a" path="res://assets/Models/City/Building-T3oyvK6VEU.glb" id="3_njnu8"]
-[ext_resource type="PackedScene" uid="uid://di72fiu11r8w2" path="res://assets/Models/City/Base.glb" id="4_svoyh"]
-[ext_resource type="PackedScene" uid="uid://dk7wortnoue0x" path="res://assets/Models/City/Building.glb" id="6_a7uav"]
-[ext_resource type="PackedScene" uid="uid://dsn1t304maveh" path="res://assets/Models/City/Building-otRsYa6pan.glb" id="7_2jasy"]
-[ext_resource type="PackedScene" uid="uid://b222nhlqa4ccq" path="res://assets/Models/City/Building-qOhhGLftam.glb" id="8_fiaui"]
-[ext_resource type="PackedScene" uid="uid://ca7xobt5okaas" path="res://assets/Models/Roads/road_crossing.glb" id="9_ark4h"]
-[ext_resource type="PackedScene" uid="uid://daecn4o6cvnvb" path="res://assets/Models/City/Building B.glb" id="10_501hs"]
-[ext_resource type="PackedScene" uid="uid://kkvlpldn16d5" path="res://assets/Models/Roads/road_straight.glb" id="10_cp27v"]
-[ext_resource type="PackedScene" uid="uid://c52v0xuh6k53t" path="res://assets/Models/City/Building-7lMEpT2ICD.glb" id="11_86pcg"]
+[ext_resource type="PackedScene" uid="uid://bafiyvwcxwntw" path="res://assets/EnviromentModels/City/Building-g15lpKh4li.glb" id="1_6nil8"]
+[ext_resource type="PackedScene" uid="uid://b5ecqlrbdy60e" path="res://assets/EnviromentModels/City/Building-bbH2Bg73qM.glb" id="2_dn5jf"]
+[ext_resource type="PackedScene" uid="uid://ba07cw6w0fe3a" path="res://assets/EnviromentModels/City/Building-T3oyvK6VEU.glb" id="3_njnu8"]
+[ext_resource type="PackedScene" uid="uid://di72fiu11r8w2" path="res://assets/EnviromentModels/City/Base.glb" id="4_svoyh"]
+[ext_resource type="PackedScene" uid="uid://dk7wortnoue0x" path="res://assets/EnviromentModels/City/Building.glb" id="6_a7uav"]
+[ext_resource type="PackedScene" uid="uid://dsn1t304maveh" path="res://assets/EnviromentModels/City/Building-otRsYa6pan.glb" id="7_2jasy"]
+[ext_resource type="PackedScene" uid="uid://b222nhlqa4ccq" path="res://assets/EnviromentModels/City/Building-qOhhGLftam.glb" id="8_fiaui"]
+[ext_resource type="PackedScene" uid="uid://ca7xobt5okaas" path="res://assets/EnviromentModels/Roads/road_crossing.glb" id="9_ark4h"]
+[ext_resource type="PackedScene" uid="uid://daecn4o6cvnvb" path="res://assets/EnviromentModels/City/Building B.glb" id="10_501hs"]
+[ext_resource type="PackedScene" uid="uid://kkvlpldn16d5" path="res://assets/EnviromentModels/Roads/road_straight.glb" id="10_cp27v"]
+[ext_resource type="PackedScene" uid="uid://c52v0xuh6k53t" path="res://assets/EnviromentModels/City/Building-7lMEpT2ICD.glb" id="11_86pcg"]
+[ext_resource type="PackedScene" uid="uid://oub0g42gxem4" path="res://assets/EnviromentModels/Roads/road_crossroadPath.glb" id="12_i3gtj"]
+[ext_resource type="ArrayMesh" uid="uid://1n42ljyl8hcf" path="res://assets/EnviromentModels/Cementery/OBJ format/iron-fence-bar.obj" id="13_umk5f"]
+[ext_resource type="ArrayMesh" uid="uid://crpeyvvatkqah" path="res://assets/EnviromentModels/Cementery/OBJ format/iron-fence.obj" id="14_f1331"]
+[ext_resource type="PackedScene" uid="uid://bnq1rih8mut02" path="res://assets/EnviromentModels/City/Police Car.glb" id="15_20hjb"]
+[ext_resource type="ArrayMesh" uid="uid://cqr16hbb4arsf" path="res://assets/EnviromentModels/Cementery/OBJ format/brick-wall-end.obj" id="15_ormbe"]
+[ext_resource type="PackedScene" uid="uid://pjpaa5yylxww" path="res://assets/EnviromentModels/City/Traffic light-Q6k7Izx6YD.glb" id="16_cag86"]
+[ext_resource type="PackedScene" uid="uid://crjk5t5h5d3ow" path="res://assets/EnviromentModels/City/Car Hatchback.glb" id="18_ltrao"]
+[ext_resource type="ArrayMesh" uid="uid://cfjcur4xv2wcs" path="res://assets/EnviromentModels/Cementery/OBJ format/pine-fall-crooked.obj" id="19_67key"]
+[ext_resource type="PackedScene" uid="uid://dfqjjai0cct11" path="res://assets/EnviromentModels/Roads/road_bend.glb" id="20_gh3bv"]
 
 [sub_resource type="BoxMesh" id="BoxMesh_hbrqr"]
 
@@ -22,12 +31,16 @@
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
 
 [node name="Root Scene2" parent="AppleBlock" instance=ExtResource("1_6nil8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -8)
+
+[node name="Root Scene40" parent="AppleBlock" instance=ExtResource("1_6nil8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, -8)
 
 [node name="Root Scene3" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -8)
 
 [node name="Root Scene4" parent="AppleBlock" instance=ExtResource("3_njnu8")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -8)
 
 [node name="Root Scene5" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
@@ -41,17 +54,17 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
 [node name="Root Scene9" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
 
-[node name="Root Scene6" parent="AppleBlock" instance=ExtResource("4_svoyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
-
-[node name="Root Scene15" parent="AppleBlock" instance=ExtResource("4_svoyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
-
 [node name="Root Scene16" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
 
 [node name="Root Scene17" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -2)
+
+[node name="Root Scene45" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -2)
+
+[node name="Root Scene48" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -4)
 
 [node name="Root Scene18" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4)
@@ -66,7 +79,16 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -6)
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -6)
 
 [node name="Root Scene22" parent="AppleBlock" instance=ExtResource("4_svoyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -4)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -4)
+
+[node name="Root Scene30" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -6)
+
+[node name="Root Scene31" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -6)
+
+[node name="Root Scene32" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -6)
 
 [node name="Root Scene23" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -4)
@@ -77,32 +99,46 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6)
 [node name="Root Scene25" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
 
-[node name="Root Scene26" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+[node name="Root Scene36" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Root Scene37" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0)
 
-[node name="Root Scene27" parent="AppleBlock" instance=ExtResource("4_svoyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+[node name="Root Scene38" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Root Scene39" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 
 [node name="Root Scene28" parent="AppleBlock" instance=ExtResource("4_svoyh")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -2)
 
+[node name="Root Scene33" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Root Scene34" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="Root Scene35" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
 [node name="Root Scene29" parent="AppleBlock" instance=ExtResource("4_svoyh")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -2)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -2)
 
 [node name="Root Scene" parent="AppleBlock" instance=ExtResource("1_6nil8")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, -6)
+transform = Transform3D(1, 0, -1.06581e-14, 0, 1, 0, 1.06581e-14, 0, 1, 0, 0, -8)
 
 [node name="Root Scene10" parent="AppleBlock" instance=ExtResource("6_a7uav")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -8)
 
 [node name="Root Scene11" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, -4)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, 0)
 
 [node name="Root Scene12" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
-transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, -2)
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -2)
 
 [node name="Root Scene13" parent="AppleBlock" instance=ExtResource("7_2jasy")]
-transform = Transform3D(-1, 0, -2.62269e-07, 0, 1, 0, 2.62269e-07, 0, -1, 2, 0, -6)
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, 2, 0, -8)
 
 [node name="Root Scene14" parent="AppleBlock" instance=ExtResource("8_fiaui")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -4)
@@ -112,69 +148,6 @@ transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.3200
 
 [node name="road_crossing7" parent="AppleBlock" instance=ExtResource("9_ark4h")]
 transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, 2.5, 0, 2.24856)
-
-[node name="Collisions" type="Node3D" parent="AppleBlock"]
-transform = Transform3D(-0.9, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
-
-[node name="Suelo" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(8.97429, 0, 0, 0, 0.2, 0, 0, 0, 5.9, 0, 0, 0)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Suelo"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Suelo/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
-
-[node name="Bloques" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(6.11226, 0, 0, 0, 1.534, 0, 0, 0, 1.90806, -0.888889, 0.9, 2)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
-
-[node name="Bloques3" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(-2.67175e-07, 0, -1.90806, 0, 1.534, 0, 6.11226, 0, -8.34039e-08, 3.22222, 0.9, -2.35068)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques3"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques3/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
-
-[node name="Bloques2" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(1.83368, 0, 0, 0, 1.534, 0, 0, 0, 1.52645, 3.44444, 0.9, 2.1)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques2/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
-
-[node name="firered" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(0.305613, 0, 0, 0, 0.3068, 0, 0, 0, 0.190806, 2.44444, 0.2, 2.8)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/firered"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/firered/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
-
-[node name="firered2" type="MeshInstance3D" parent="AppleBlock/Collisions"]
-transform = Transform3D(-0.00656027, 0, -0.190762, 0, 0.3068, 0, 0.305543, 0, -0.00409583, 4.30591, 0.2, -1.12434)
-visible = false
-mesh = SubResource("BoxMesh_hbrqr")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/firered2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/firered2/StaticBody3D"]
-shape = SubResource("BoxShape3D_txjll")
 
 [node name="road_straight2" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.74891)
@@ -188,17 +161,23 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.74891)
 [node name="road_straight5" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0.74891)
 
+[node name="road_straight23" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.75571, 0, -11.3511)
+
+[node name="road_straight24" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.75571, 0, -12.3122)
+
+[node name="road_straight25" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.75571, 0, -13.3044)
+
 [node name="road_straight6" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0.74891)
 
 [node name="road_crossing8" parent="AppleBlock" instance=ExtResource("9_ark4h")]
-transform = Transform3D(-4.37114e-08, -1.50996e-07, 1, -8.74228e-08, 1, 1.50996e-07, 1, 8.74228e-08, 4.37114e-08, -4.24824, 0, -0.50458)
+transform = Transform3D(-4.37114e-08, -1.50996e-07, 1, -8.74228e-08, 1, 1.50996e-07, 1, 8.74228e-08, 4.37114e-08, -4.24824, 0, 0.49542)
 
 [node name="road_straight8" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -1.50458)
-
-[node name="road_straight9" parent="AppleBlock" instance=ExtResource("10_cp27v")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, 0.49542)
 
 [node name="road_crossing9" parent="AppleBlock" instance=ExtResource("9_ark4h")]
 transform = Transform3D(-4.37114e-08, -1.50996e-07, 1, -8.74228e-08, 1, 1.50996e-07, 1, 8.74228e-08, 4.37114e-08, -4.24824, 0, -3.50458)
@@ -208,12 +187,19 @@ transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.748
 
 [node name="road_straight12" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -5.50458)
+visible = false
 
 [node name="road_straight13" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -6.50458)
 
+[node name="road_straight22" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -5.50458)
+
 [node name="road_straight11" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -2.50458)
+
+[node name="road_straight21" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -0.50458)
 
 [node name="road_straight7" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0.74891)
@@ -242,11 +228,648 @@ transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 0.74891)
 [node name="road_straight19" parent="AppleBlock" instance=ExtResource("10_cp27v")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0.74891)
 
-[node name="Root Scene" parent="." instance=ExtResource("10_501hs")]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+[node name="Root Scene41" parent="AppleBlock" instance=ExtResource("10_501hs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, -8)
 
-[node name="Root Scene2" parent="." instance=ExtResource("11_86pcg")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -4)
+[node name="Root Scene42" parent="AppleBlock" instance=ExtResource("11_86pcg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -6)
 
-[node name="Root Scene3" parent="." instance=ExtResource("10_501hs")]
-transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 0)
+[node name="Collisions" type="Node3D" parent="."]
+transform = Transform3D(-0.9, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0)
+
+[node name="Suelo" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(8.97429, 0, 0, 0, 0.2, 0, 0, 0, 13.57, 0, 0, -1)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Suelo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Suelo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Suelo2" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(8.97429, 0, 0, 0, 0.2, 0, 0, 0, 13.57, 10, 0, -1)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Suelo2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Suelo2/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(21.454, 0, 0, 0, 1.534, 0, 0, 0, 2.48048, 5, 0.9, 4)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Bloques"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Bloques/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques3" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(-6.01144e-07, 0, -1.90806, 0, 1.534, 0, 13.7526, 0, -8.34039e-08, -3.22223, 0.9, -1.25068)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Bloques3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Bloques3/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques4" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(-22.0041, 0, 1.66808e-07, 0, 1.534, 0, -1.92366e-06, 0, -1.90806, 5.44444, 0.9, -5.95068)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Bloques4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Bloques4/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques2" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(1.83368, 0, 0, 0, 1.534, 0, 0, 0, 14.9592, 15.0673, 0.9, -0.1)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/Bloques2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/Bloques2/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="firered" type="MeshInstance3D" parent="Collisions"]
+transform = Transform3D(0.305613, 0, 0, 0, 0.3068, 0, 0, 0, 0.190806, 2.44444, 0.2, 2.8)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Collisions/firered"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Collisions/firered/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="road_crossroadPath2" parent="." instance=ExtResource("12_i3gtj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.5, 0.00323087, 2.72177)
+
+[node name="Fences" type="Node3D" parent="."]
+
+[node name="Iron-fence-bar" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89789, 0.0943746, 2.95369)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.6, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence2" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.6, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence3" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.6, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence4" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.6, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence5" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.4, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence6" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.4, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence8" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.4, 0, 3.4)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="road_crossing12" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -0.6, 0, -6.75144)
+
+[node name="road_crossing13" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, 3.4, 0, -6.75144)
+
+[node name="road_straight24" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.4, 0, -8.25109)
+
+[node name="road_straight25" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.4, 0, -8.25109)
+
+[node name="road_straight26" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4, 0, -8.25109)
+
+[node name="road_straight27" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.6, 0, -8.25109)
+
+[node name="road_straight28" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.4, 0, -8.25109)
+
+[node name="road_straight29" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.4, 0, -8.25109)
+
+[node name="road_crossing14" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -11.4409, 0, -6.75144)
+
+[node name="road_crossing15" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -7.4, 0, -6.75144)
+
+[node name="road_straight30" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.4, 0, -8.25109)
+
+[node name="road_straight31" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.4, 0, -8.25109)
+
+[node name="road_straight32" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.4, 0, -8.25109)
+
+[node name="road_straight34" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.4, 0, -8.25109)
+
+[node name="road_straight35" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.4, 0, -8.25109)
+
+[node name="road_crossing17" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, 1.50996e-07, -1, -8.74228e-08, 1, 1.50996e-07, -1, -8.74228e-08, 4.37114e-08, -11.7041, 0, -0.484602)
+
+[node name="road_straight36" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 2.5154)
+
+[node name="road_straight37" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 1.5154)
+
+[node name="road_straight38" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 0.515398)
+
+[node name="road_straight40" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -1.4846)
+
+[node name="road_crossing19" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, 1.50996e-07, -1, -8.74228e-08, 1, 1.50996e-07, -1, -8.74228e-08, 4.37114e-08, -11.7041, 0, -0.484602)
+
+[node name="road_straight41" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 2.5154)
+
+[node name="road_straight42" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 1.5154)
+
+[node name="road_straight43" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, 0.515398)
+
+[node name="road_straight45" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -1.4846)
+
+[node name="road_crossing20" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, 1.50996e-07, -1, -8.74228e-08, 1, 1.50996e-07, -1, -8.74228e-08, 4.37114e-08, -11.7041, 0, -3.4846)
+
+[node name="road_straight47" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -4.4846)
+
+[node name="road_straight48" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -5.4846)
+
+[node name="road_straight49" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -6.4846)
+
+[node name="road_straight50" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -2.4846)
+
+[node name="road_crossing22" parent="Fences" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, 1.50996e-07, -1, -8.74228e-08, 1, 1.50996e-07, -1, -8.74228e-08, 4.37114e-08, -11.7041, 0, -3.4846)
+
+[node name="road_straight52" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -4.4846)
+
+[node name="road_straight53" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -5.4846)
+
+[node name="road_straight54" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -6.4846)
+
+[node name="road_straight55" parent="Fences" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.2037, 0, -2.4846)
+
+[node name="Iron-fence-bar2" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.13919, 0.0847206, 2.92949)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence7" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -5.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence9" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence10" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -7.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence11" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -6.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence12" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -9.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence13" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -8.65071, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence14" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -10.6507, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence15" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-0.9, 0, -8.74228e-08, 0, 1, 0, 7.86805e-08, 0, -1, -11.5507, 0, 2.47873)
+mesh = ExtResource("14_f1331")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end3" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, 2.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end4" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, 1.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end5" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, 1.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end6" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, 0.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end7" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -0.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end8" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -1.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end9" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -2.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end10" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -3.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end11" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -4.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="Brick-wall-end12" type="MeshInstance3D" parent="Fences"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -11.5, 0.1, -5.5)
+mesh = ExtResource("15_ormbe")
+skeleton = NodePath("../..")
+
+[node name="extra" type="Node3D" parent="."]
+
+[node name="Root Scene" parent="extra" instance=ExtResource("15_20hjb")]
+transform = Transform3D(0.0121298, 0, -0.999927, 0, 1, 0, 0.999927, 0, 0.0121298, -3.4846, 0.0645186, 2.96479)
+
+[node name="road_straight24" parent="extra" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -4.50751, 0, -6.76064)
+
+[node name="road_straight25" parent="extra" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.2518, 0, -8.46064)
+
+[node name="road_crossing12" parent="extra" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, 1.50996e-07, -1, -8.74228e-08, 1, 1.50996e-07, -1, -8.74228e-08, 4.37114e-08, -2.75927, 0, -5.50715)
+
+[node name="road_straight26" parent="extra" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.25892, 0, -6.50715)
+
+[node name="road_straight27" parent="extra" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, -2.50751, 0, -6.76064)
+
+[node name="road_crossroadPath3" parent="extra" instance=ExtResource("12_i3gtj")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -3.52291, 0.00323087, -8.20689)
+
+[node name="Iron-fence-bar4" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 1.74846e-07, 0, 1, 0, -1.74846e-07, 0, 1, -2.56832, 0.0847206, -8.94122)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../..")
+
+[node name="semaforo" parent="extra" instance=ExtResource("16_cag86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.89921, 0.1, 2.25904)
+
+[node name="semaforo" type="MeshInstance3D" parent="extra/semaforo"]
+transform = Transform3D(0.202831, 0, 0, 0, 0.793975, 0, 0, 0, 0.177456, 0.0344243, 0.372421, -0.0539176)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="extra/semaforo/semaforo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="extra/semaforo/semaforo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="semaforo3" parent="extra" instance=ExtResource("16_cag86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.08101, 0.1, -6.88356)
+
+[node name="semaforo" type="MeshInstance3D" parent="extra/semaforo3"]
+transform = Transform3D(0.202831, 0, 0, 0, 0.793975, 0, 0, 0, 0.177456, 0.0344243, 0.372421, -0.0539176)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="extra/semaforo3/semaforo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="extra/semaforo3/semaforo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="semaforo4" parent="extra" instance=ExtResource("16_cag86")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.8715, 0.0947342, -0.14787)
+
+[node name="semaforo" type="MeshInstance3D" parent="extra/semaforo4"]
+transform = Transform3D(0.202831, 0, 0, 0, 0.793975, 0, 0, 0, 0.177456, 0.0344243, 0.372421, -0.0539176)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="extra/semaforo4/semaforo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="extra/semaforo4/semaforo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Pine-fall-crooked" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.3, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked2" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked3" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -6.7, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked4" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.9, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked5" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.1, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked6" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -10.3, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence-bar5" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 3.49037, 0.0943746, -8.96542)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Pine-fall-crooked8" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked9" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.1, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked10" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.900001, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked11" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.299999, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked12" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1.5, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked13" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.7, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked7" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, -8.3)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence-bar3" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -14.1423, 0.0943746, -2.41814)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Iron-fence-bar6" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, -14.1181, 0.0847206, -3.45945)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Pine-fall-crooked14" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -2.22777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked15" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -1.02777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked16" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, 0.172231)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked17" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, 1.37223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked18" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, 2.57223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked19" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, 3.77223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence-bar7" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, -14.1423, 0.0943746, -9.51814)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Pine-fall-crooked20" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -9.02777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked21" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -8.12777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked40" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -12.5213, 0, -8.12777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked22" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -6.92777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked23" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -5.72777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked24" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -4.52777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked25" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, -3.32777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked26" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -13.4769, 0, 4.97223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="road_straight28" parent="extra" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 5.3625, 0, -1.77597)
+
+[node name="Iron-fence-bar8" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.85771, 0.0943746, -1.91814)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Iron-fence-bar9" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-2.18557e-07, 0, 1, 0, 1, 0, -1, 0, -2.18557e-07, 4.88192, 0.0847206, -3.45945)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Pine-fall-crooked27" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -1.72777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked28" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -0.527769)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked29" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, 0.672231)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked30" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, 1.87223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked31" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, 3.07223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked32" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, 4.27223)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Iron-fence-bar10" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(1.31134e-07, 0, -1, 0, 1, 0, 1, 0, 1.31134e-07, 4.85771, 0.0943746, -9.51814)
+mesh = ExtResource("13_umk5f")
+skeleton = NodePath("../../..")
+
+[node name="Pine-fall-crooked33" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -9.02777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked34" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -8.12777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked35" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -6.92777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked36" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -5.72777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked37" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -4.52777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="Pine-fall-crooked38" type="MeshInstance3D" parent="extra"]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 5.52314, 0, -3.32777)
+mesh = ExtResource("19_67key")
+skeleton = NodePath("../..")
+
+[node name="road_bend2" parent="extra" instance=ExtResource("20_gh3bv")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -12.4505, -0.0013859, 2.75258)
+
+[node name="road_bend3" parent="extra" instance=ExtResource("20_gh3bv")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -11.6914, 0.00020498, -7.4085)
+
+[node name="semaforo2" parent="extra" instance=ExtResource("16_cag86")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, -4.20917, 0.1, -1.79318)
+
+[node name="semaforo" type="MeshInstance3D" parent="extra/semaforo2"]
+transform = Transform3D(0.202831, 0, 0, 0, 0.793975, 0, 0, 0, 0.177456, -0.0655755, 0.472421, 0.046082)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="extra/semaforo2/semaforo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="extra/semaforo2/semaforo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Root Scene" parent="." instance=ExtResource("18_ltrao")]
+transform = Transform3D(8.19564e-08, 0, -1, 0, 1, 0, 1, 0, 8.19564e-08, -3.5, 0.1, -5.2)

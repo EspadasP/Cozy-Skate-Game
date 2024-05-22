@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cryi1lm7oyncv"
+path="res://.godot/imported/structure-wood.obj-cb8e2e62506c8c17c12d66b4e2b0f70b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/structure-wood.obj-cb8e2e62506c8c17c12d66b4e2b0f70b.mesh"]
+
+source_file="res://assets/SkateparkModules/structure-wood.obj"
+dest_files=["res://.godot/imported/structure-wood.obj-cb8e2e62506c8c17c12d66b4e2b0f70b.mesh", "res://.godot/imported/structure-wood.obj-cb8e2e62506c8c17c12d66b4e2b0f70b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

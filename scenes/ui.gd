@@ -13,7 +13,7 @@ func _ready():
 	$PressA.visible = false
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
+func _process(_delta):
 	if Controlautoload.final_score != -1 and score_count < Controlautoload.final_score:
 		score_count += 1000
 		$Counter.play()

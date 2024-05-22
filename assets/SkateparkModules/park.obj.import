@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://cddhcklklcm1p"
+path="res://.godot/imported/park.obj-36ca28d7ec98dbce53780453f97696ea.mesh"
+
+[deps]
+
+files=["res://.godot/imported/park.obj-36ca28d7ec98dbce53780453f97696ea.mesh"]
+
+source_file="res://assets/SkateparkModules/park.obj"
+dest_files=["res://.godot/imported/park.obj-36ca28d7ec98dbce53780453f97696ea.mesh", "res://.godot/imported/park.obj-36ca28d7ec98dbce53780453f97696ea.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

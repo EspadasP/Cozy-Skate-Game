@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://ckx8jyskse0yv"
+path="res://.godot/imported/shovel.obj-bb5ba71f99210d7f530402f9548f5f7c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/shovel.obj-bb5ba71f99210d7f530402f9548f5f7c.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/shovel.obj"
+dest_files=["res://.godot/imported/shovel.obj-bb5ba71f99210d7f530402f9548f5f7c.mesh", "res://.godot/imported/shovel.obj-bb5ba71f99210d7f530402f9548f5f7c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

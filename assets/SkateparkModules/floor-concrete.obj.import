@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dhwi6r1bhe6ya"
+path="res://.godot/imported/floor-concrete.obj-066188c628b7336f5f49a01475966278.mesh"
+
+[deps]
+
+files=["res://.godot/imported/floor-concrete.obj-066188c628b7336f5f49a01475966278.mesh"]
+
+source_file="res://assets/SkateparkModules/floor-concrete.obj"
+dest_files=["res://.godot/imported/floor-concrete.obj-066188c628b7336f5f49a01475966278.mesh", "res://.godot/imported/floor-concrete.obj-066188c628b7336f5f49a01475966278.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

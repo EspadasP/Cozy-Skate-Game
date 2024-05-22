@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dg5qrw5qd3etv"
+path="res://.godot/imported/character-digger.obj-3c763f6704541d70f047be71dfa4ae5c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-digger.obj-3c763f6704541d70f047be71dfa4ae5c.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/character-digger.obj"
+dest_files=["res://.godot/imported/character-digger.obj-3c763f6704541d70f047be71dfa4ae5c.mesh", "res://.godot/imported/character-digger.obj-3c763f6704541d70f047be71dfa4ae5c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

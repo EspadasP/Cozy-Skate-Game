@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://efgj7by35g55"
+path="res://.godot/imported/altar-stone.obj-a12c15f2c180680fd276560118b93a8f.mesh"
+
+[deps]
+
+files=["res://.godot/imported/altar-stone.obj-a12c15f2c180680fd276560118b93a8f.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/altar-stone.obj"
+dest_files=["res://.godot/imported/altar-stone.obj-a12c15f2c180680fd276560118b93a8f.mesh", "res://.godot/imported/altar-stone.obj-a12c15f2c180680fd276560118b93a8f.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

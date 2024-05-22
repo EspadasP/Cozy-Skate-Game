@@ -63,7 +63,7 @@ func _physics_process(delta):
 	
 	
 
-func _process(delta):
+func _process(_delta):
 	if is_on_floor() and !isgrinding and !holding_manual:
 		counter += 1
 		if counter > 5: #algunos frames delta se "cuelan" de modo que con el contador nos aseguramos de que realmente ha acabado la linea
@@ -243,8 +243,8 @@ func stop_player():
 func get_continue_grind():
 	return continue_grind
 
-func set_continue_grind(set):
-	continue_grind = set
+func set_continue_grind(setgrind):
+	continue_grind = setgrind
 
 func _on_rolling_sfx_finished():
 	rollingSFX = false

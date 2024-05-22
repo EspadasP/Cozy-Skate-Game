@@ -1,23 +1,22 @@
-[gd_scene load_steps=31 format=3 uid="uid://t2okndrfmsue"]
+[gd_scene load_steps=29 format=3 uid="uid://t2okndrfmsue"]
 
 [ext_resource type="PackedScene" uid="uid://bp0um7g41pwaa" path="res://scenes/player.tscn" id="1_05ql4"]
 [ext_resource type="Script" path="res://scenes/Camera3D.gd" id="2_0hcxt"]
-[ext_resource type="Script" path="res://scenes/GrindableObject.gd" id="2_ijtxo"]
 [ext_resource type="PackedScene" uid="uid://dt0ltgpvmhe4d" path="res://scenes/GrindableObject.tscn" id="3_s2h87"]
 [ext_resource type="ArrayMesh" uid="uid://dngjq788jtbkn" path="res://assets/kenney/half-pipe.obj" id="4_klhol"]
 [ext_resource type="ArrayMesh" uid="uid://bksfr23apqc61" path="res://assets/kenney/floor-wood.obj" id="5_yxkuo"]
-[ext_resource type="PackedScene" uid="uid://c30q072hp3tbg" path="res://scenes/rail_high_bits.tscn" id="7_d5bwi"]
 [ext_resource type="ArrayMesh" uid="uid://bbfoxu1gjrd4q" path="res://assets/kenney/obstacle-box.obj" id="7_sg0k2"]
 [ext_resource type="PackedScene" uid="uid://cjl6y4wjpsx7e" path="res://scenes/ui.tscn" id="8_23kjj"]
-[ext_resource type="Script" path="res://scenes/testingpathcurve.gd" id="9_yyivk"]
 [ext_resource type="ArrayMesh" uid="uid://ceyv64n5iwiyp" path="res://assets/kenney/rail-high.obj" id="10_nmdtc"]
 [ext_resource type="PackedScene" uid="uid://eglfbptbfg0l" path="res://scenes/booombox.tscn" id="11_gpmkq"]
-[ext_resource type="PackedScene" uid="uid://bvsr3ijbuwtg0" path="res://scenes/skatepark.tscn" id="11_oggg0"]
 [ext_resource type="PackedScene" uid="uid://br1wp1rlem0fm" path="res://scenes/city.tscn" id="13_esnwf"]
-[ext_resource type="PackedScene" uid="uid://dd6aaqihglyoe" path="res://assets/Models/Beach/Beach scene.glb" id="14_kgjlp"]
 [ext_resource type="ArrayMesh" uid="uid://clsyyjdkuohjb" path="res://assets/kenney/skateboard.obj" id="16_kmjcf"]
+[ext_resource type="ArrayMesh" uid="uid://cryi1lm7oyncv" path="res://assets/kenney/structure-wood.obj" id="16_ubjcu"]
+[ext_resource type="ArrayMesh" uid="uid://buvy42ou5ybwr" path="res://assets/kenney/model.obj" id="17_5e821"]
+[ext_resource type="ArrayMesh" uid="uid://dxxhfbtamysxr" path="res://assets/kenney/structure-platform.obj" id="17_dnph3"]
 [ext_resource type="AudioStream" uid="uid://cqdbyodnde66y" path="res://assets/Sounds/Music/glitch-quick-rap-beat.mp3" id="17_kv5i1"]
 [ext_resource type="AudioStream" uid="uid://dng5pu0t764sh" path="res://assets/Sounds/SFX/birdsfx.mp3" id="18_42und"]
+[ext_resource type="ArrayMesh" uid="uid://b60kxt4hy1jno" path="res://assets/Models/Cementery/OBJ format/bench.obj" id="18_aeewg"]
 
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_e034w"]
 data = PackedVector3Array(0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0.8, -0.4, -0.5, 0.8, -0.5, 0.5, 0.8, -0.5, -0.5, 0.8, -0.5, 0.5, 0.8, -0.4, -0.5, 0.8, -0.4, -0.5, 0.6965, -0.2864, -0.5, 0.8, -0.4, -0.5, 0.8, -0.3, -0.5, 0.5929, -0.2727, -0.5, 0.8, -0.4, -0.5, 0.6965, -0.2864, -0.5, 0.4, -0.1928, -0.5, 0.8, -0.4, -0.5, 0.5929, -0.2727, -0.5, 0.4, -0.1928, -0.5, 0.8, -0.5, -0.5, 0.8, -0.4, -0.5, 0.2343, -0.0657, -0.5, 0.8, -0.5, -0.5, 0.4, -0.1928, -0.5, 0.2343, -0.0657, -0.5, 0, -0.5, -0.5, 0.8, -0.5, -0.5, 0, -0.5, -0.5, 0.2343, -0.0657, -0.5, 0.1072, 0.1, -0.5, 0, -0.5, -0.5, 0.1072, 0.1, -0.5, 0.0273, 0.2929, -0.5, 0, -0.5, -0.5, 0.0273, 0.2929, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.0273, 0.2929, -0.5, 0.0136, 0.3965, 0.5, 0, -0.5, -0.5, 0.8, -0.5, -0.5, 0, -0.5, -0.5, 0.8, -0.5, 0.5, 0, -0.5, 0.5, 0.8, -0.5, 0.5, 0, -0.5, 0.5, 0.8, -0.4, 0.5, 0.8, -0.5, 0.5, 0.8, -0.4, 0.5, 0, -0.5, 0.5, 0.4, -0.1928, 0.5, 0.8, -0.4, 0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, 0.5, 0.8, -0.4, 0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.4, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, 0.5, 0.4, -0.1928, 0.5, 0, -0.5, 0.5, 0.2343, -0.0657, 0.5, 0.2343, -0.0657, 0.5, 0, -0.5, 0.5, 0.1072, 0.1, 0.5, 0.1072, 0.1, 0.5, 0, -0.5, 0.5, 0.0273, 0.2929, 0.5, 0.0273, 0.2929, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0.0273, 0.2929, 0.5, 0, 0.5, 0.5, 0.0136, 0.3965, 0.5, 0.0136, 0.3965, -0.5, 0.0273, 0.2929, 0.5, 0.0273, 0.2929, -0.5, 0.0273, 0.2929, 0.5, 0.0136, 0.3965, -0.5, 0.0136, 0.3965, -0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, 0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, -0.5, 0.4, -0.1928, -0.5, 0.5929, -0.2727, 0.5, 0.1072, 0.1, -0.5, 0.2343, -0.0657, 0.5, 0.2343, -0.0657, -0.5, 0.2343, -0.0657, 0.5, 0.1072, 0.1, -0.5, 0.1072, 0.1, -0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, 0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, -0.5, 0.5929, -0.2727, -0.5, 0.6965, -0.2864, 0.5, 0.0273, 0.2929, -0.5, 0.1072, 0.1, 0.5, 0.1072, 0.1, -0.5, 0.1072, 0.1, 0.5, 0.0273, 0.2929, -0.5, 0.0273, 0.2929, -0.5, 0.2343, -0.0657, 0.5, 0.4, -0.1928, 0.5, 0.2343, -0.0657, 0.5, 0.4, -0.1928, -0.5, 0.2343, -0.0657, -0.5, 0.4, -0.1928, 0.5, 0.8, -0.3, -0.5, 0.8, -0.4, 0.5, 0.8, -0.4, -0.5, 0.8, -0.4, 0.5, 0.8, -0.3, -0.5, 0.8, -0.3, -0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, -0.5, 0.6965, -0.2864, -0.5, 0.8, -0.3, 0.5, 0, 0.5, -0.5, 0.0136, 0.3965, 0.5, 0.0136, 0.3965, -0.5, 0.0136, 0.3965, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, 0.5, 0.5, 0, 0.5, -0.5, 0, 0.5, 0.5, 0, -0.5, -0.5, 0, -0.5, 0.5, 0.8, -0.4, -0.5, 0.8, -0.5, 0.5, 0.8, -0.5, -0.5, 0.8, -0.5, 0.5, 0.8, -0.4, -0.5, 0.8, -0.4, -0.5, 0.6965, -0.2864, -0.5, 0.8, -0.4, -0.5, 0.8, -0.3, -0.5, 0.5929, -0.2727, -0.5, 0.8, -0.4, -0.5, 0.6965, -0.2864, -0.5, 0.4, -0.1928, -0.5, 0.8, -0.4, -0.5, 0.5929, -0.2727, -0.5, 0.4, -0.1928, -0.5, 0.8, -0.5, -0.5, 0.8, -0.4, -0.5, 0.2343, -0.0657, -0.5, 0.8, -0.5, -0.5, 0.4, -0.1928, -0.5, 0.2343, -0.0657, -0.5, 0, -0.5, -0.5, 0.8, -0.5, -0.5, 0, -0.5, -0.5, 0.2343, -0.0657, -0.5, 0.1072, 0.1, -0.5, 0, -0.5, -0.5, 0.1072, 0.1, -0.5, 0.0273, 0.2929, -0.5, 0, -0.5, -0.5, 0.0273, 0.2929, -0.5, 0, 0.5, -0.5, 0, 0.5, -0.5, 0.0273, 0.2929, -0.5, 0.0136, 0.3965, 0.5, 0, -0.5, -0.5, 0.8, -0.5, -0.5, 0, -0.5, -0.5, 0.8, -0.5, 0.5, 0, -0.5, 0.5, 0.8, -0.5, 0.5, 0, -0.5, 0.5, 0.8, -0.4, 0.5, 0.8, -0.5, 0.5, 0.8, -0.4, 0.5, 0, -0.5, 0.5, 0.4, -0.1928, 0.5, 0.8, -0.4, 0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, 0.5, 0.8, -0.4, 0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.4, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, 0.5, 0.4, -0.1928, 0.5, 0, -0.5, 0.5, 0.2343, -0.0657, 0.5, 0.2343, -0.0657, 0.5, 0, -0.5, 0.5, 0.1072, 0.1, 0.5, 0.1072, 0.1, 0.5, 0, -0.5, 0.5, 0.0273, 0.2929, 0.5, 0.0273, 0.2929, 0.5, 0, -0.5, 0.5, 0, 0.5, 0.5, 0.0273, 0.2929, 0.5, 0, 0.5, 0.5, 0.0136, 0.3965, 0.5, 0.0136, 0.3965, -0.5, 0.0273, 0.2929, 0.5, 0.0273, 0.2929, -0.5, 0.0273, 0.2929, 0.5, 0.0136, 0.3965, -0.5, 0.0136, 0.3965, -0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, 0.5, 0.4, -0.1928, 0.5, 0.5929, -0.2727, -0.5, 0.4, -0.1928, -0.5, 0.5929, -0.2727, 0.5, 0.1072, 0.1, -0.5, 0.2343, -0.0657, 0.5, 0.2343, -0.0657, -0.5, 0.2343, -0.0657, 0.5, 0.1072, 0.1, -0.5, 0.1072, 0.1, -0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, 0.5, 0.5929, -0.2727, 0.5, 0.6965, -0.2864, -0.5, 0.5929, -0.2727, -0.5, 0.6965, -0.2864, 0.5, 0.0273, 0.2929, -0.5, 0.1072, 0.1, 0.5, 0.1072, 0.1, -0.5, 0.1072, 0.1, 0.5, 0.0273, 0.2929, -0.5, 0.0273, 0.2929, -0.5, 0.2343, -0.0657, 0.5, 0.4, -0.1928, 0.5, 0.2343, -0.0657, 0.5, 0.4, -0.1928, -0.5, 0.2343, -0.0657, -0.5, 0.4, -0.1928, 0.5, 0.8, -0.3, -0.5, 0.8, -0.4, 0.5, 0.8, -0.4, -0.5, 0.8, -0.4, 0.5, 0.8, -0.3, -0.5, 0.8, -0.3, -0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, 0.5, 0.6965, -0.2864, 0.5, 0.8, -0.3, -0.5, 0.6965, -0.2864, -0.5, 0.8, -0.3, 0.5, 0, 0.5, -0.5, 0.0136, 0.3965, 0.5, 0.0136, 0.3965, -0.5, 0.0136, 0.3965, 0.5, 0, 0.5, -0.5, 0, 0.5)
@@ -46,208 +45,14 @@ data = PackedVector3Array(0.05, 0.4, 0.5, -0.05, 0.4, -0.5, -0.05, 0.4, 0.5, -0.
 [sub_resource type="ConcavePolygonShape3D" id="ConcavePolygonShape3D_4v40f"]
 data = PackedVector3Array(0.1929, 0.12, -0.1929, -0.4, -0.025, -0.4, 0.4, -0.025, -0.4, -0.4, -0.025, -0.4, 0.1929, 0.12, -0.1929, -0.1929, 0.12, -0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, -0.1929, 0.4, -0.025, -0.4, 0.1929, 0.12, -0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, -0.1929, 0.12, 0.1929, -0.4, -0.025, -0.4, -0.1929, 0.12, -0.1929, -0.4, -0.025, -0.4, -0.1929, 0.12, 0.1929, -0.4, -0.025, 0.4, -0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, -0.4, -0.025, 0.4, -0.1929, 0.12, 0.1929, 0.5, -0.05, -0.5, -0.5, -0.05, 0.5, 0.5, -0.05, 0.5, -0.5, -0.05, 0.5, 0.5, -0.05, -0.5, -0.5, -0.05, -0.5, 0.1929, 0.12, 0.1929, 0.15, 0.15, -0.15, 0.1929, 0.12, -0.1929, 0.15, 0.15, -0.15, 0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, 0.15, 0.15, -0.15, -0.1929, 0.12, -0.1929, 0.1929, 0.12, -0.1929, -0.1929, 0.12, -0.1929, 0.15, 0.15, -0.15, -0.15, 0.15, -0.15, -0.15, 0.15, 0.15, -0.1929, 0.12, -0.1929, -0.15, 0.15, -0.15, -0.1929, 0.12, -0.1929, -0.15, 0.15, 0.15, -0.1929, 0.12, 0.1929, -0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, 0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, -0.1929, 0.12, 0.1929, -0.15, 0.15, 0.15, -0.4, -0.025, 0.4, -0.5, -0.05, -0.5, -0.4, -0.025, -0.4, -0.5, -0.05, -0.5, -0.4, -0.025, 0.4, -0.5, -0.05, 0.5, -0.5, -0.05, 0.5, 0.4, -0.025, 0.4, 0.5, -0.05, 0.5, 0.4, -0.025, 0.4, -0.5, -0.05, 0.5, -0.4, -0.025, 0.4, 0.5, -0.05, 0.5, 0.4, -0.025, -0.4, 0.5, -0.05, -0.5, 0.4, -0.025, -0.4, 0.5, -0.05, 0.5, 0.4, -0.025, 0.4, 0.4, -0.025, -0.4, -0.5, -0.05, -0.5, 0.5, -0.05, -0.5, -0.5, -0.05, -0.5, 0.4, -0.025, -0.4, -0.4, -0.025, -0.4, 0.15, 0.15, 0.15, -0.15, 0.15, -0.15, 0.15, 0.15, -0.15, -0.15, 0.15, -0.15, 0.15, 0.15, 0.15, -0.15, 0.15, 0.15, 0.1929, 0.12, -0.1929, -0.4, -0.025, -0.4, 0.4, -0.025, -0.4, -0.4, -0.025, -0.4, 0.1929, 0.12, -0.1929, -0.1929, 0.12, -0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, -0.1929, 0.4, -0.025, -0.4, 0.1929, 0.12, -0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, -0.1929, 0.12, 0.1929, -0.4, -0.025, -0.4, -0.1929, 0.12, -0.1929, -0.4, -0.025, -0.4, -0.1929, 0.12, 0.1929, -0.4, -0.025, 0.4, -0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, 0.4, -0.025, 0.4, 0.1929, 0.12, 0.1929, -0.4, -0.025, 0.4, -0.1929, 0.12, 0.1929, 0.5, -0.05, -0.5, -0.5, -0.05, 0.5, 0.5, -0.05, 0.5, -0.5, -0.05, 0.5, 0.5, -0.05, -0.5, -0.5, -0.05, -0.5, 0.1929, 0.12, 0.1929, 0.15, 0.15, -0.15, 0.1929, 0.12, -0.1929, 0.15, 0.15, -0.15, 0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, 0.15, 0.15, -0.15, -0.1929, 0.12, -0.1929, 0.1929, 0.12, -0.1929, -0.1929, 0.12, -0.1929, 0.15, 0.15, -0.15, -0.15, 0.15, -0.15, -0.15, 0.15, 0.15, -0.1929, 0.12, -0.1929, -0.15, 0.15, -0.15, -0.1929, 0.12, -0.1929, -0.15, 0.15, 0.15, -0.1929, 0.12, 0.1929, -0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, 0.1929, 0.12, 0.1929, 0.15, 0.15, 0.15, -0.1929, 0.12, 0.1929, -0.15, 0.15, 0.15, -0.4, -0.025, 0.4, -0.5, -0.05, -0.5, -0.4, -0.025, -0.4, -0.5, -0.05, -0.5, -0.4, -0.025, 0.4, -0.5, -0.05, 0.5, -0.5, -0.05, 0.5, 0.4, -0.025, 0.4, 0.5, -0.05, 0.5, 0.4, -0.025, 0.4, -0.5, -0.05, 0.5, -0.4, -0.025, 0.4, 0.5, -0.05, 0.5, 0.4, -0.025, -0.4, 0.5, -0.05, -0.5, 0.4, -0.025, -0.4, 0.5, -0.05, 0.5, 0.4, -0.025, 0.4, 0.4, -0.025, -0.4, -0.5, -0.05, -0.5, 0.5, -0.05, -0.5, -0.5, -0.05, -0.5, 0.4, -0.025, -0.4, -0.4, -0.025, -0.4, 0.15, 0.15, 0.15, -0.15, 0.15, -0.15, 0.15, 0.15, -0.15, -0.15, 0.15, -0.15, 0.15, 0.15, 0.15, -0.15, 0.15, 0.15)
 
-[sub_resource type="Curve3D" id="Curve3D_kyacj"]
-_data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -2.00268, 0, -0.0135857, 0, 0, 0, 0, 0, 0, 1.99949, 0, -0.0232527),
-"tilts": PackedFloat32Array(0, 0)
-}
-point_count = 2
+[sub_resource type="BoxMesh" id="BoxMesh_6xqhu"]
 
-[sub_resource type="BoxShape3D" id="BoxShape3D_vyjet"]
-
-[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_hntyb"]
+[sub_resource type="BoxShape3D" id="BoxShape3D_ymr18"]
 
 [node name="Gameplay" type="Node3D"]
 
 [node name="Player" parent="." instance=ExtResource("1_05ql4")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.034802, 0, 1.10004)
-
-[node name="Level" type="Node3D" parent="."]
-script = ExtResource("2_ijtxo")
-
-[node name="GrindableObject" parent="Level" instance=ExtResource("3_s2h87")]
-transform = Transform3D(7.54978e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, 3.09541e-07, 0.971119, -0.114677, 5.62489)
-
-[node name="GrindableObject6" parent="Level" instance=ExtResource("3_s2h87")]
-transform = Transform3D(-9.93476e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, -4.07326e-07, 5.16094, -0.114677, 5.62489)
-
-[node name="GrindableObject2" parent="Level" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 4.1, -3.73953, -0.135986, 5.03207)
-
-[node name="GrindableObject3" parent="Level" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.707106, 0, -2.89914, 0, 1, 0, 0.707106, 0, 2.89914, 3.11156, -0.135986, 8.509)
-
-[node name="GrindableObject4" parent="Level" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.562429, 0, 3.39006, 0, 1, 0, -0.826844, 0, 2.30596, -3.6047, -0.135986, 10.6187)
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level"]
-use_collision = true
-size = Vector3(100, 0, 100)
-
-[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Level"]
-transform = Transform3D(-0.899519, 0.266747, 0.345993, 0.0580125, -0.712018, 0.69976, 0.433012, 0.64952, 0.625, 9.43983, 5.45081, 12.074)
-light_color = Color(1, 0.976471, 0.964706, 1)
-shadow_enabled = true
-shadow_opacity = 0.15
-
-[node name="Half-pipe" type="MeshInstance3D" parent="Level"]
-transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -16.0475, 0, 8.74464)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../..")
-
-[node name="Floor-wood" type="MeshInstance3D" parent="Level/Half-pipe"]
-transform = Transform3D(-1.5299e-07, 0, -2.97, 0, 1, 0, 3.5, 0, -1.29823e-07, -1.055, 0.01, 1.948)
-mesh = ExtResource("5_yxkuo")
-skeleton = NodePath("../../..")
-
-[node name="Half-pipe2" type="MeshInstance3D" parent="Level/Half-pipe"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../../..")
-
-[node name="Half-pipe3" type="MeshInstance3D" parent="Level/Half-pipe/Half-pipe2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../../../..")
-
-[node name="Half-pipe2" type="MeshInstance3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3"]
-transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 4)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../../../../..")
-
-[node name="Half-pipe2" type="MeshInstance3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../../../../../..")
-
-[node name="Half-pipe3" type="MeshInstance3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
-mesh = ExtResource("4_klhol")
-skeleton = NodePath("../../../../../../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/Half-pipe3"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/Half-pipe3/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_e034w")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_wbif1")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_iptn4")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/Half-pipe2/Half-pipe3/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_47523")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe/Half-pipe2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/Half-pipe2/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_xt63d")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Half-pipe"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_b34lr")
-
-[node name="StaticBody3D2" type="StaticBody3D" parent="Level/Half-pipe"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Half-pipe/StaticBody3D2"]
-shape = SubResource("ConcavePolygonShape3D_4tmqa")
-
-[node name="GrindableObject6" parent="Level/Half-pipe" instance=ExtResource("3_s2h87")]
-transform = Transform3D(-2.18557e-08, 0, -2.87, 0, 0.5, 0, 0.499999, 0, -1.25452e-07, -0.987027, 0.632007, -0.303658)
-
-[node name="GrindableObject5" parent="Level/Half-pipe" instance=ExtResource("3_s2h87")]
-transform = Transform3D(-2.18557e-08, 0, -2.87, 0, 0.5, 0, 0.499999, 0, -1.25452e-07, -0.987029, 0.632007, 4.29634)
-
-[node name="Rail-high" type="MeshInstance3D" parent="Level"]
-transform = Transform3D(-4.37114e-08, 0, -4.86, 0, 1, 0, 1, 0, -2.12437e-07, -0.20206, 2.38419e-07, -2.59034)
-mesh = ExtResource("10_nmdtc")
-skeleton = NodePath("../..")
-
-[node name="GrindableObject" parent="Level/Rail-high" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.11599, 0.00625545)
-visible = false
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Rail-high"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Rail-high/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_pgkb7")
-
-[node name="Rail-highBits" parent="Level" instance=ExtResource("7_d5bwi")]
-transform = Transform3D(-4.37114e-08, 0, -4.86, 0, 1, 0, 1, 0, -2.12437e-07, 25.7979, 2.38419e-07, 3.40966)
-
-[node name="Rail-high3" type="MeshInstance3D" parent="Level"]
-transform = Transform3D(-4.2222e-08, 0.258819, -4.6944, 1.13133e-08, 0.965926, 1.25786, 1, 0, -2.12437e-07, 12.1979, 0.7, -1.19034)
-mesh = ExtResource("10_nmdtc")
-skeleton = NodePath("../..")
-
-[node name="GrindableObject" parent="Level/Rail-high3" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.01599, 0.00625545)
-visible = false
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Rail-high3"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Rail-high3/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_pgkb7")
-
-[node name="Rail-high2" type="MeshInstance3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.86, -2.80206, 2.38419e-07, -5.19034)
-mesh = ExtResource("10_nmdtc")
-skeleton = NodePath("../..")
-
-[node name="GrindableObject" parent="Level/Rail-high2" instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.01599, 0.00625545)
-visible = false
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Rail-high2"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Rail-high2/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_pgkb7")
-
-[node name="Obstacle-box" type="MeshInstance3D" parent="Level"]
-transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 8.68414, 2.38419e-07, -0.368804)
-mesh = ExtResource("7_sg0k2")
-skeleton = NodePath("../..")
-
-[node name="StaticBody3D" type="StaticBody3D" parent="Level/Obstacle-box"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/Obstacle-box/StaticBody3D"]
-shape = SubResource("ConcavePolygonShape3D_4v40f")
-
-[node name="testingpathcurve" type="Node3D" parent="Level"]
-transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 5.7765, 0.436865, -6.30715)
-script = ExtResource("9_yyivk")
-
-[node name="Path3D0" type="Path3D" parent="Level/testingpathcurve"]
-curve = SubResource("Curve3D_kyacj")
-
-[node name="PathFollow3D" type="PathFollow3D" parent="Level/testingpathcurve/Path3D0"]
-transform = Transform3D(0.00241525, 0, -0.999997, 0, 1, 0, 0.999997, 0, 0.00241525, -2.00268, 0, -0.0135857)
-
-[node name="Node3D" type="Node3D" parent="Level/testingpathcurve/Path3D0/PathFollow3D"]
-transform = Transform3D(0.00241525, 0, 0.999997, 0, 1, 0, -0.999997, 0, 0.00241525, -0.0862284, 0.452636, -0.0381327)
-
-[node name="Area3D" type="Area3D" parent="Level/testingpathcurve"]
-
-[node name="CollisionShape3D" type="CollisionShape3D" parent="Level/testingpathcurve/Area3D"]
-transform = Transform3D(4, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0)
-shape = SubResource("BoxShape3D_vyjet")
-
-[node name="CSGBox3D" type="CSGBox3D" parent="Level/testingpathcurve/Area3D/CollisionShape3D"]
-material = SubResource("StandardMaterial3D_hntyb")
-
-[node name="Booombox" parent="Level" instance=ExtResource("11_gpmkq")]
-transform = Transform3D(0.0953067, -0.010088, -0.0285455, 0.00697578, 0.0990656, -0.0117195, 0.0294611, 0.00917821, 0.0951199, 38.1609, 1.44593, -34.3971)
-
-[node name="Skatepark" parent="Level" instance=ExtResource("11_oggg0")]
-transform = Transform3D(3, 0, 0, 0, 3, 0, 0, 0, 3, 1.78499, 0, -31.6615)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(1, 0, 0, 0, 0.772168, 0.635418, 0, -0.635418, 0.772168, 0, 3, 2)
@@ -257,26 +62,10 @@ script = ExtResource("2_0hcxt")
 [node name="UI" parent="." instance=ExtResource("8_23kjj")]
 
 [node name="City" parent="." instance=ExtResource("13_esnwf")]
-transform = Transform3D(3.5, 0, 0, 0, 3.5, 0, 0, 0, 3.5, 29, 0, -23)
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, 17.2462, 0, 4.11633)
 
 [node name="Skatepark" type="Node3D" parent="."]
 transform = Transform3D(-0.899519, 0.266747, 0.345993, 0.0580125, -0.712018, 0.699761, 0.433012, 0.64952, 0.624999, 9.43983, 5.45081, 12.074)
-
-[node name="Beach" type="Node3D" parent="."]
-transform = Transform3D(-0.899519, 0.266747, 0.345993, 0.0580125, -0.712018, 0.69976, 0.433012, 0.64952, 0.625, 9.43983, 5.45081, 12.074)
-
-[node name="Beach scene" parent="Beach" instance=ExtResource("14_kgjlp")]
-transform = Transform3D(-0.899519, 0.0580124, 0.433012, 0.266747, -0.712018, 0.64952, 0.345993, 0.69976, 0.625, 1.92895, 3.32395, -1.70916)
-
-[node name="GrindableObject" parent="." instance=ExtResource("3_s2h87")]
-transform = Transform3D(2.98023e-08, 0, -0.576295, 0, 1, 0, 0.999999, 0, 1.71749e-08, 0, 0, -3)
-
-[node name="GrindableObject2" parent="." instance=ExtResource("3_s2h87")]
-transform = Transform3D(0.999999, 0, 0, 0, 1, 0, 0, 0, 4.1, -1, 0, 0)
-
-[node name="Skateboard" type="MeshInstance3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -0.344004, 0.938968, 0, -0.938968, -0.344004, 37.6383, 0.782328, -33.3471)
-mesh = ExtResource("16_kmjcf")
 
 [node name="Music" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("17_kv5i1")
@@ -288,6 +77,325 @@ stream = ExtResource("18_42und")
 autoplay = true
 bus = &"SFX"
 
-[connection signal="area_entered" from="Level/testingpathcurve/Area3D" to="Level/testingpathcurve" method="_on_area_3d_area_entered"]
-[connection signal="body_entered" from="Level/testingpathcurve/Area3D" to="Level/testingpathcurve" method="_on_area_3d_body_entered"]
-[connection signal="body_exited" from="Level/testingpathcurve/Area3D" to="Level/testingpathcurve" method="_on_area_3d_body_exited"]
+[node name="Modules" type="Node3D" parent="."]
+
+[node name="CSGBox3D" type="CSGBox3D" parent="Modules"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -17)
+use_collision = true
+size = Vector3(154, 0, 104)
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="Modules"]
+transform = Transform3D(-0.899519, 0.266747, 0.345993, 0.0580125, -0.712018, 0.699761, 0.433012, 0.64952, 0.624999, 9.43983, 5.45081, 12.074)
+light_color = Color(1, 0.976471, 0.964706, 1)
+shadow_enabled = true
+shadow_opacity = 0.15
+
+[node name="Half-pipe" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(-8.74228e-08, 0, 2, 0, 2, 0, -2, 0, -8.74228e-08, -24.758, 0.490855, -17.2026)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../..")
+
+[node name="Floor-wood" type="MeshInstance3D" parent="Modules/Half-pipe"]
+transform = Transform3D(-1.5299e-07, 0, -2.97, 0, 1, 0, 3.5, 0, -1.29823e-07, -1.055, 0.01, 1.948)
+mesh = ExtResource("5_yxkuo")
+skeleton = NodePath("../../..")
+
+[node name="Half-pipe2" type="MeshInstance3D" parent="Modules/Half-pipe"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../../..")
+
+[node name="Half-pipe3" type="MeshInstance3D" parent="Modules/Half-pipe/Half-pipe2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../../../..")
+
+[node name="Half-pipe2" type="MeshInstance3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3"]
+transform = Transform3D(-1, 0, -8.74228e-08, 0, 1, 0, 8.74228e-08, 0, -1, 0, 0, 4)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../../../../..")
+
+[node name="Half-pipe2" type="MeshInstance3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../../../../../..")
+
+[node name="Half-pipe3" type="MeshInstance3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -1, 0, 0)
+mesh = ExtResource("4_klhol")
+skeleton = NodePath("../../../../../../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/Half-pipe3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/Half-pipe3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_e034w")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/Half-pipe2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_wbif1")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/Half-pipe2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_iptn4")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/Half-pipe2/Half-pipe3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_47523")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe/Half-pipe2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/Half-pipe2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_xt63d")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Half-pipe"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_b34lr")
+
+[node name="StaticBody3D2" type="StaticBody3D" parent="Modules/Half-pipe"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Half-pipe/StaticBody3D2"]
+shape = SubResource("ConcavePolygonShape3D_4tmqa")
+
+[node name="GrindableObject6" parent="Modules/Half-pipe" instance=ExtResource("3_s2h87")]
+transform = Transform3D(-2.18557e-08, 0, -2.87, 0, 0.5, 0, 0.499999, 0, -1.25452e-07, -0.987027, 0.632007, -0.303658)
+visible = false
+
+[node name="GrindableObject5" parent="Modules/Half-pipe" instance=ExtResource("3_s2h87")]
+transform = Transform3D(-2.18557e-08, 0, -2.87, 0, 0.5, 0, 0.499999, 0, -1.25452e-07, -0.987029, 0.632007, 4.29634)
+visible = false
+
+[node name="Rail-high" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(-4.37114e-08, 0, -4.86, 0, 1, 0, 1, 0, -2.12437e-07, -0.20206, 0.0504332, -2.59034)
+mesh = ExtResource("10_nmdtc")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Rail-high" instance=ExtResource("3_s2h87")]
+transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.11599, 0.00625545)
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Rail-high"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Rail-high/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgkb7")
+
+[node name="Rail-high5" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(-4.26809e-08, -0.238208, -6.57892, -9.43551e-09, 1.07752, -1.45441, 1, 1.38182e-16, -2.94516e-07, -0.495884, 1.05043, 8.40966)
+mesh = ExtResource("10_nmdtc")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Rail-high5" instance=ExtResource("3_s2h87")]
+transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.11599, 0.00625545)
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Rail-high5"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Rail-high5/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgkb7")
+
+[node name="Rail-high3" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(-4.37114e-08, 0, -4.86, 0, 1, 0, 1, 0, -2.12437e-07, 19.8934, 1.54181, -0.338526)
+mesh = ExtResource("10_nmdtc")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Rail-high3" instance=ExtResource("3_s2h87")]
+transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.01599, 0.00625545)
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Rail-high3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Rail-high3/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgkb7")
+
+[node name="Rail-high2" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 4.86, -12.9637, 0.556508, -5.19034)
+mesh = ExtResource("10_nmdtc")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Rail-high2" instance=ExtResource("3_s2h87")]
+transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.01599, 0.00625545)
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Rail-high2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Rail-high2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgkb7")
+
+[node name="Obstacle-box" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(10, 0, 0, 0, 10, 0, 0, 0, 10, 17.0252, 2.38419e-07, -0.368804)
+mesh = ExtResource("7_sg0k2")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Obstacle-box"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Obstacle-box/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4v40f")
+
+[node name="Rail-high4" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(-4.28658e-08, 0.195741, -4.76599, 8.5561e-09, 0.980656, 0.9513, 1, -9.46553e-16, -2.12437e-07, -23.437, 0.864726, -0.338526)
+mesh = ExtResource("10_nmdtc")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Rail-high4" instance=ExtResource("3_s2h87")]
+transform = Transform3D(0.999999, 0, 5.8651e-07, 0, 1, 0, -2.45286e-08, 0, 1.01235, 0.00970531, 0.01599, 0.00625545)
+visible = false
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Rail-high4"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Rail-high4/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_pgkb7")
+
+[node name="Obstacle-box2" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(5, 0, 0, 0, 5, 0, 0, 0, 5, -26.4184, 0.796138, -0.368804)
+mesh = ExtResource("7_sg0k2")
+skeleton = NodePath("../..")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Obstacle-box2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Obstacle-box2/StaticBody3D"]
+shape = SubResource("ConcavePolygonShape3D_4v40f")
+
+[node name="Booombox" parent="Modules" instance=ExtResource("11_gpmkq")]
+transform = Transform3D(0.0954831, 0.00120877, -0.0296902, -0.00387475, 0.0995706, -0.00840754, 0.0294611, 0.00917821, 0.0951199, 30.1878, 1.12929, -21.4655)
+
+[node name="Skateboard" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(0.719691, 0.65192, 0.23884, 0, -0.344004, 0.938968, 0.694294, -0.675767, -0.247577, 29.1336, 0.782328, -20.9101)
+mesh = ExtResource("16_kmjcf")
+skeleton = NodePath("../..")
+
+[node name="Bench" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(3.89986, 0, 0, 0, 1, 0, 0, 0, 1.57848, -14.3632, 0.5, 8.67805)
+mesh = ExtResource("18_aeewg")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Bench" instance=ExtResource("3_s2h87")]
+transform = Transform3D(-1.05505e-08, 0, -1.01235, 0, 1, 0, 0.549999, 0, 5.42259e-07, 0.00970507, 0.21599, -0.12045)
+visible = false
+
+[node name="collision" type="MeshInstance3D" parent="Modules/Bench"]
+transform = Transform3D(1.0274, 0, 0, 0, 0.64678, 0, 0, 0, 0.385013, -0.00788546, 0.153127, -0.0539179)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Bench/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Bench/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="Bench2" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(3.89986, 0, 0, 0, 1, 0, 0, 0, 1.57848, 9.63681, 0.5, -12.322)
+mesh = ExtResource("18_aeewg")
+skeleton = NodePath("../..")
+
+[node name="GrindableObject" parent="Modules/Bench2" instance=ExtResource("3_s2h87")]
+transform = Transform3D(-1.05505e-08, 0, -1.01235, 0, 1, 0, 0.549999, 0, 5.42259e-07, 0.00970507, 0.21599, -0.12045)
+visible = false
+
+[node name="collision" type="MeshInstance3D" parent="Modules/Bench2"]
+transform = Transform3D(1.0274, 0, 0, 0, 0.64678, 0, 0, 0, 0.385013, -0.00788546, 0.153127, -0.0539179)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Bench2/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Bench2/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="Structure-wood" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 21.8199, 0.5, -0.44324)
+mesh = ExtResource("16_ubjcu")
+skeleton = NodePath("../..")
+
+[node name="Structure-platform" type="MeshInstance3D" parent="Modules/Structure-wood"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00197029, 0.24733, 0.00615057)
+mesh = ExtResource("17_dnph3")
+skeleton = NodePath("../../..")
+
+[node name="Structure-platform2" type="MeshInstance3D" parent="Modules/Structure-wood"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.00197029, 0.24733, 0.00615057)
+mesh = ExtResource("17_dnph3")
+skeleton = NodePath("../../..")
+
+[node name="collision" type="MeshInstance3D" parent="Modules/Structure-wood"]
+transform = Transform3D(1.14156, 0, 0, 0, 1.29356, 0, 0, 0, 1.10004, 0.0344238, 0.453127, -0.0539176)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Structure-wood/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Structure-wood/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="Structure-wood2" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2.4199, 0.5, 8.15676)
+mesh = ExtResource("16_ubjcu")
+skeleton = NodePath("../..")
+
+[node name="Structure-platform" type="MeshInstance3D" parent="Modules/Structure-wood2"]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.00197029, 0.24733, 0.00615057)
+mesh = ExtResource("17_dnph3")
+skeleton = NodePath("../../..")
+
+[node name="Structure-platform2" type="MeshInstance3D" parent="Modules/Structure-wood2"]
+transform = Transform3D(-1, 0, 8.74228e-08, 0, 1, 0, -8.74228e-08, 0, -1, 0.00197029, 0.24733, 0.00615057)
+mesh = ExtResource("17_dnph3")
+skeleton = NodePath("../../..")
+
+[node name="collision" type="MeshInstance3D" parent="Modules/Structure-wood2"]
+transform = Transform3D(1.14156, 0, 0, 0, 1.29356, 0, 0, 0, 1.10004, 0.0344238, 0.453127, -0.0539176)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/Structure-wood2/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/Structure-wood2/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="picnictable" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(0.018828, 0, -1.84984, 0, 1, 0, 1.44988, 0, 0.024022, -27.1424, 1.1, 12.8731)
+mesh = ExtResource("17_5e821")
+skeleton = NodePath("../..")
+
+[node name="collision" type="MeshInstance3D" parent="Modules/picnictable"]
+transform = Transform3D(1.36775, 0, -1.86265e-09, 0, 0.964248, 0, -1.11759e-08, 0, 1.67801, 0.0344248, -0.319747, -0.0539131)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/picnictable/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/picnictable/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="GrindableObject" parent="Modules/picnictable" instance=ExtResource("3_s2h87")]
+transform = Transform3D(1.04214, 0, -0.105221, 0, 0.999999, 0, 0.0791087, 0, 1.38614, 0.47274, -0.0589709, 0.00679684)
+visible = false
+
+[node name="GrindableObject2" parent="Modules/picnictable" instance=ExtResource("3_s2h87")]
+transform = Transform3D(1.04214, 0, -0.105221, 0, 0.999999, 0, 0.0791087, 0, 1.38614, -0.375353, -0.0589709, -0.00183582)
+visible = false
+
+[node name="picnictable2" type="MeshInstance3D" parent="Modules"]
+transform = Transform3D(0.018828, 0, -1.84984, 0, 1, 0, 1.44988, 0, 0.024022, 25.3534, 1.1, -14.5587)
+mesh = ExtResource("17_5e821")
+skeleton = NodePath("../..")
+
+[node name="collision" type="MeshInstance3D" parent="Modules/picnictable2"]
+transform = Transform3D(1.36775, 0, -1.86265e-09, 0, 0.964248, 0, -1.11759e-08, 0, 1.67801, 0.0344248, -0.319747, -0.0539131)
+visible = false
+mesh = SubResource("BoxMesh_6xqhu")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="Modules/picnictable2/collision"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="Modules/picnictable2/collision/StaticBody3D"]
+shape = SubResource("BoxShape3D_ymr18")
+
+[node name="GrindableObject" parent="Modules/picnictable2" instance=ExtResource("3_s2h87")]
+transform = Transform3D(1.04214, 0, -0.105221, 0, 0.999999, 0, 0.0791087, 0, 1.38614, 0.47274, -0.0589709, 0.00679684)
+visible = false
+
+[node name="GrindableObject2" parent="Modules/picnictable2" instance=ExtResource("3_s2h87")]
+transform = Transform3D(1.04214, 0, -0.105221, 0, 0.999999, 0, 0.0791087, 0, 1.38614, -0.375353, -0.0589709, -0.00183582)
+visible = false

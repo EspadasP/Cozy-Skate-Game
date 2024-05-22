@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://jekxtqvup5u1"
+path="res://.godot/imported/character-ghost.obj-03a5dad03fe20fb0acf0547bba3cd884.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-ghost.obj-03a5dad03fe20fb0acf0547bba3cd884.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/character-ghost.obj"
+dest_files=["res://.godot/imported/character-ghost.obj-03a5dad03fe20fb0acf0547bba3cd884.mesh", "res://.godot/imported/character-ghost.obj-03a5dad03fe20fb0acf0547bba3cd884.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

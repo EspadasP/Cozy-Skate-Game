@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://djw8xy3ai1xim"
+path="res://.godot/imported/bench-damaged.obj-e2a38b1f79bede1ede3548923b09c238.mesh"
+
+[deps]
+
+files=["res://.godot/imported/bench-damaged.obj-e2a38b1f79bede1ede3548923b09c238.mesh"]
+
+source_file="res://assets/EnviromentModels/Cementery/OBJ format/bench-damaged.obj"
+dest_files=["res://.godot/imported/bench-damaged.obj-e2a38b1f79bede1ede3548923b09c238.mesh", "res://.godot/imported/bench-damaged.obj-e2a38b1f79bede1ede3548923b09c238.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false
