@@ -1,0 +1,252 @@
+[gd_scene load_steps=14 format=3 uid="uid://br1wp1rlem0fm"]
+
+[ext_resource type="PackedScene" uid="uid://bafiyvwcxwntw" path="res://assets/Models/City/Building-g15lpKh4li.glb" id="1_6nil8"]
+[ext_resource type="PackedScene" uid="uid://b5ecqlrbdy60e" path="res://assets/Models/City/Building-bbH2Bg73qM.glb" id="2_dn5jf"]
+[ext_resource type="PackedScene" uid="uid://ba07cw6w0fe3a" path="res://assets/Models/City/Building-T3oyvK6VEU.glb" id="3_njnu8"]
+[ext_resource type="PackedScene" uid="uid://di72fiu11r8w2" path="res://assets/Models/City/Base.glb" id="4_svoyh"]
+[ext_resource type="PackedScene" uid="uid://dk7wortnoue0x" path="res://assets/Models/City/Building.glb" id="6_a7uav"]
+[ext_resource type="PackedScene" uid="uid://dsn1t304maveh" path="res://assets/Models/City/Building-otRsYa6pan.glb" id="7_2jasy"]
+[ext_resource type="PackedScene" uid="uid://b222nhlqa4ccq" path="res://assets/Models/City/Building-qOhhGLftam.glb" id="8_fiaui"]
+[ext_resource type="PackedScene" uid="uid://ca7xobt5okaas" path="res://assets/Models/Roads/road_crossing.glb" id="9_ark4h"]
+[ext_resource type="PackedScene" uid="uid://daecn4o6cvnvb" path="res://assets/Models/City/Building B.glb" id="10_501hs"]
+[ext_resource type="PackedScene" uid="uid://kkvlpldn16d5" path="res://assets/Models/Roads/road_straight.glb" id="10_cp27v"]
+[ext_resource type="PackedScene" uid="uid://c52v0xuh6k53t" path="res://assets/Models/City/Building-7lMEpT2ICD.glb" id="11_86pcg"]
+
+[sub_resource type="BoxMesh" id="BoxMesh_hbrqr"]
+
+[sub_resource type="BoxShape3D" id="BoxShape3D_txjll"]
+
+[node name="City" type="Node3D"]
+
+[node name="AppleBlock" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, 2)
+
+[node name="Root Scene2" parent="AppleBlock" instance=ExtResource("1_6nil8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4, 0, 0)
+
+[node name="Root Scene3" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
+
+[node name="Root Scene4" parent="AppleBlock" instance=ExtResource("3_njnu8")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, 0)
+
+[node name="Root Scene5" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -2)
+
+[node name="Root Scene7" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -2)
+
+[node name="Root Scene8" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 2, 0, -4)
+
+[node name="Root Scene9" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Root Scene6" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, 0)
+
+[node name="Root Scene15" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, 0)
+
+[node name="Root Scene16" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -2)
+
+[node name="Root Scene17" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -2)
+
+[node name="Root Scene18" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -4)
+
+[node name="Root Scene19" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -4)
+
+[node name="Root Scene20" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5, 0, -6)
+
+[node name="Root Scene21" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7, 0, -6)
+
+[node name="Root Scene22" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -4)
+
+[node name="Root Scene23" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -4)
+
+[node name="Root Scene24" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -6)
+
+[node name="Root Scene25" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -6)
+
+[node name="Root Scene26" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, 0)
+
+[node name="Root Scene27" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, 0)
+
+[node name="Root Scene28" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9, 0, -2)
+
+[node name="Root Scene29" parent="AppleBlock" instance=ExtResource("4_svoyh")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11, 0, -2)
+
+[node name="Root Scene" parent="AppleBlock" instance=ExtResource("1_6nil8")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, -6)
+
+[node name="Root Scene10" parent="AppleBlock" instance=ExtResource("6_a7uav")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2, 0, 0)
+
+[node name="Root Scene11" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, -4)
+
+[node name="Root Scene12" parent="AppleBlock" instance=ExtResource("2_dn5jf")]
+transform = Transform3D(-4.37114e-08, 0, 1, 0, 1, 0, -1, 0, -4.37114e-08, 4, 0, -2)
+
+[node name="Root Scene13" parent="AppleBlock" instance=ExtResource("7_2jasy")]
+transform = Transform3D(-1, 0, -2.62269e-07, 0, 1, 0, 2.62269e-07, 0, -1, 2, 0, -6)
+
+[node name="Root Scene14" parent="AppleBlock" instance=ExtResource("8_fiaui")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -4)
+
+[node name="road_crossing6" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -1.5, 0, 2.24856)
+
+[node name="road_crossing7" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, 2.5, 0, 2.24856)
+
+[node name="Collisions" type="Node3D" parent="AppleBlock"]
+transform = Transform3D(-0.9, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, -2)
+
+[node name="Suelo" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(8.97429, 0, 0, 0, 0.2, 0, 0, 0, 5.9, 0, 0, 0)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Suelo"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Suelo/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(6.11226, 0, 0, 0, 1.534, 0, 0, 0, 1.90806, -0.888889, 0.9, 2)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques3" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(-2.67175e-07, 0, -1.90806, 0, 1.534, 0, 6.11226, 0, -8.34039e-08, 3.22222, 0.9, -2.35068)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques3"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques3/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="Bloques2" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(1.83368, 0, 0, 0, 1.534, 0, 0, 0, 1.52645, 3.44444, 0.9, 2.1)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/Bloques2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/Bloques2/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="firered" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(0.305613, 0, 0, 0, 0.3068, 0, 0, 0, 0.190806, 2.44444, 0.2, 2.8)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/firered"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/firered/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="firered2" type="MeshInstance3D" parent="AppleBlock/Collisions"]
+transform = Transform3D(-0.00656027, 0, -0.190762, 0, 0.3068, 0, 0.305543, 0, -0.00409583, 4.30591, 0.2, -1.12434)
+visible = false
+mesh = SubResource("BoxMesh_hbrqr")
+
+[node name="StaticBody3D" type="StaticBody3D" parent="AppleBlock/Collisions/firered2"]
+
+[node name="CollisionShape3D" type="CollisionShape3D" parent="AppleBlock/Collisions/firered2/StaticBody3D"]
+shape = SubResource("BoxShape3D_txjll")
+
+[node name="road_straight2" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -0.5, 0, 0.74891)
+
+[node name="road_straight3" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0.5, 0, 0.74891)
+
+[node name="road_straight4" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 1.5, 0, 0.74891)
+
+[node name="road_straight5" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -2.5, 0, 0.74891)
+
+[node name="road_straight6" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 3.5, 0, 0.74891)
+
+[node name="road_crossing8" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, -1.50996e-07, 1, -8.74228e-08, 1, 1.50996e-07, 1, 8.74228e-08, 4.37114e-08, -4.24824, 0, -0.50458)
+
+[node name="road_straight8" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -1.50458)
+
+[node name="road_straight9" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, 0.49542)
+
+[node name="road_crossing9" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(-4.37114e-08, -1.50996e-07, 1, -8.74228e-08, 1, 1.50996e-07, 1, 8.74228e-08, 4.37114e-08, -4.24824, 0, -3.50458)
+
+[node name="road_straight10" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -4.50458)
+
+[node name="road_straight12" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -5.50458)
+
+[node name="road_straight13" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -6.50458)
+
+[node name="road_straight11" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2.74859, 0, -2.50458)
+
+[node name="road_straight7" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 4.5, 0, 0.74891)
+
+[node name="road_crossing10" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -10.5, 0, 2.24856)
+
+[node name="road_crossing11" parent="AppleBlock" instance=ExtResource("9_ark4h")]
+transform = Transform3D(1, 8.74228e-08, 0, -8.74228e-08, 1, 1.50996e-07, -1.32005e-14, 1.50996e-07, -1, -6.5, 0, 2.24856)
+
+[node name="road_straight14" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -9.5, 0, 0.74891)
+
+[node name="road_straight15" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -8.5, 0, 0.74891)
+
+[node name="road_straight16" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -7.5, 0, 0.74891)
+
+[node name="road_straight17" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -11.5, 0, 0.74891)
+
+[node name="road_straight18" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -5.5, 0, 0.74891)
+
+[node name="road_straight19" parent="AppleBlock" instance=ExtResource("10_cp27v")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, -4.5, 0, 0.74891)
+
+[node name="Root Scene" parent="." instance=ExtResource("10_501hs")]
+transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0, -4)
+
+[node name="Root Scene2" parent="." instance=ExtResource("11_86pcg")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, 4, 0, -4)
+
+[node name="Root Scene3" parent="." instance=ExtResource("10_501hs")]
+transform = Transform3D(-4.37114e-08, 0, -1, 0, 1, 0, 1, 0, -4.37114e-08, -2, 0, 0)

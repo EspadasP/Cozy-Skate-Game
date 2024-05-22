@@ -239,3 +239,4 @@ stream = ExtResource("3_x73by")
 max_db = 0.0
 autoplay = true
 max_distance = 17.0
+bus = &"SFX"

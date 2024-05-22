@@ -11,7 +11,7 @@ func update_label_text(new_text: String):
 
 func update_label_score(score, mult):
 	$Scorelabel.text = str(score)
-	$MultLabel.text = "x" + str(mult)
+	$MultLabel.text = "x " + str(mult)
 	
 
 
@@ -20,6 +20,11 @@ func clear_label_text():
 	if timer_can_start:
 		$CleanTricksTextTimer.start()
 		timer_can_start = false
+
+func current_score_update(linescore):
+	$CurrentScoreLabel.text = str(linescore)
+
+
 
 	
 

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://df0e0bnfsolfn"
+path="res://.godot/imported/pumpkin-tall.obj-a592e945c74060be5b1023aedacb088c.mesh"
+
+[deps]
+
+files=["res://.godot/imported/pumpkin-tall.obj-a592e945c74060be5b1023aedacb088c.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/pumpkin-tall.obj"
+dest_files=["res://.godot/imported/pumpkin-tall.obj-a592e945c74060be5b1023aedacb088c.mesh", "res://.godot/imported/pumpkin-tall.obj-a592e945c74060be5b1023aedacb088c.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

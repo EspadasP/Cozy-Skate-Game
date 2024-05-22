@@ -1,0 +1,34 @@
+[gd_scene load_steps=4 format=3 uid="uid://crwq1sd0507t0"]
+
+[ext_resource type="Script" path="res://scenes/Reload.gd" id="1_aefk1"]
+[ext_resource type="Texture2D" uid="uid://b3lit3ue30ge5" path="res://assets/UI/Cercle_vert_100%.svg.png" id="2_ngxg5"]
+[ext_resource type="Texture2D" uid="uid://bvq5g1gtfamg5" path="res://assets/UI/Red_circle.svg.png" id="3_lqf8d"]
+
+[node name="Reload" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_aefk1")
+
+[node name="ProgressBar" type="ProgressBar" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 34.0
+offset_right = 196.0
+offset_bottom = 27.0
+
+[node name="TextureProgressBar" type="TextureProgressBar" parent="."]
+layout_mode = 0
+offset_left = 613.0
+offset_top = 475.0
+offset_right = 653.0
+offset_bottom = 515.0
+fill_mode = 4
+texture_under = ExtResource("2_ngxg5")
+texture_progress = ExtResource("3_lqf8d")
+
+[node name="Timer" type="Timer" parent="."]
+wait_time = 0.038
+
+[connection signal="timeout" from="Timer" to="." method="_on_timer_timeout"]

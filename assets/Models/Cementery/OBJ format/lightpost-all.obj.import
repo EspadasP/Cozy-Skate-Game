@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c675jf80vc8m"
+path="res://.godot/imported/lightpost-all.obj-5b04b7adfdea0628db9129eaa80bc82b.mesh"
+
+[deps]
+
+files=["res://.godot/imported/lightpost-all.obj-5b04b7adfdea0628db9129eaa80bc82b.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/lightpost-all.obj"
+dest_files=["res://.godot/imported/lightpost-all.obj-5b04b7adfdea0628db9129eaa80bc82b.mesh", "res://.godot/imported/lightpost-all.obj-5b04b7adfdea0628db9129eaa80bc82b.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

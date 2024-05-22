@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dblsjuxnhrvil"
+path="res://.godot/imported/trunk.obj-92445b222f090ccaf2ef5cb1ba26612e.mesh"
+
+[deps]
+
+files=["res://.godot/imported/trunk.obj-92445b222f090ccaf2ef5cb1ba26612e.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/trunk.obj"
+dest_files=["res://.godot/imported/trunk.obj-92445b222f090ccaf2ef5cb1ba26612e.mesh", "res://.godot/imported/trunk.obj-92445b222f090ccaf2ef5cb1ba26612e.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

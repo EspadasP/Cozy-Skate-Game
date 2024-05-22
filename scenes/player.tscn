@@ -1,9 +1,11 @@
-[gd_scene load_steps=22 format=3 uid="uid://bp0um7g41pwaa"]
+[gd_scene load_steps=24 format=3 uid="uid://bp0um7g41pwaa"]
 
 [ext_resource type="Script" path="res://scenes/player.gd" id="1_2tdto"]
 [ext_resource type="PackedScene" uid="uid://g85m1wtp6cvv" path="res://assets/skatepark/skateboard.glb" id="1_ohcpc"]
 [ext_resource type="PackedScene" uid="uid://drdeatoqtkytb" path="res://assets/skatepark/character-skate-boy.glb" id="2_l6hil"]
 [ext_resource type="PackedScene" uid="uid://dkkrx15ybwjrg" path="res://assets/skatepark/Clouds.glb" id="4_kv53e"]
+[ext_resource type="AudioStream" uid="uid://dp66osm5vdd4a" path="res://assets/Sounds/SFX/olliesoundeffectpixabay.mp3" id="5_jfyg1"]
+[ext_resource type="AudioStream" uid="uid://bj56o5ouj7ejs" path="res://assets/Sounds/SFX/rollingsfx.mp3" id="6_bap6a"]
 
 [sub_resource type="Animation" id="Animation_0dsgv"]
 resource_name = "360ShoveIt"
@@ -745,5 +747,16 @@ shape = SubResource("CapsuleShape3D_2q6um")
 [node name="Dust" parent="." instance=ExtResource("4_kv53e")]
 transform = Transform3D(-9.51093e-10, -1.99504e-10, -0.02, 0.00485444, 0.0194019, -4.2439e-10, 0.0194019, -0.00485444, -8.74228e-10, -4.21575e-08, 0.0496645, 0.399144)
 
+[node name="OllieSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("5_jfyg1")
+bus = &"SFX"
+
+[node name="RollingSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_bap6a")
+volume_db = -11.305
+pitch_scale = 0.65
+bus = &"SFX"
+
 [connection signal="timeout" from="Tricks/Timer" to="." method="_on_timer_timeout"]
 [connection signal="timeout" from="Tricks/ManualTimer" to="." method="_on_manual_timer_timeout"]
+[connection signal="finished" from="RollingSFX" to="." method="_on_rolling_sfx_finished"]

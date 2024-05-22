@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://dt0ltgpvmhe4d"]
+[gd_scene load_steps=7 format=3 uid="uid://dt0ltgpvmhe4d"]
 
 [ext_resource type="Script" path="res://scenes/GrindableObject.gd" id="2_cjb5l"]
+[ext_resource type="AudioStream" uid="uid://bil22pj6s4eqv" path="res://assets/Sounds/SFX/grindsfxgravitysound.mp3" id="3_67jnt"]
 [ext_resource type="Script" path="res://scenes/Path3D.gd" id="3_i1jkb"]
 
 [sub_resource type="BoxShape3D" id="BoxShape3D_i6fxl"]
@@ -12,17 +13,17 @@ albedo_color = Color(1, 0, 1, 1)
 
 [sub_resource type="Curve3D" id="Curve3D_fworq"]
 _data = {
-"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -0.374288, 0.599532, 1.78809, 0, 0, 0, 0, 0, 0, -0.325126, 0.645443, -1.86622),
+"points": PackedVector3Array(0, 0, 0, 0, 0, 0, -0.374298, 0.597562, 1.78829, 0, 0, 0, 0, 0, 0, -0.380376, 0.595782, -1.78346),
 "tilts": PackedFloat32Array(0, 0)
 }
 point_count = 2
 
 [node name="GrindableObject" type="Node3D"]
-transform = Transform3D(2.98023e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, 1.22189e-07, 0, 0, 0)
+transform = Transform3D(7.54978e-08, 0, -4.1, 0, 1, 0, 0.999999, 0, 3.09541e-07, 0, 0, 0)
 script = ExtResource("2_cjb5l")
 
 [node name="CollisionGrind" type="Area3D" parent="."]
-transform = Transform3D(0.5, 0, 0, 0, 0.5, 0, 0, 0, 0.5, 0, 0.362742, -0.000854433)
+transform = Transform3D(0.5, 0, -1.03044e-07, 0, 0.5, 0, 5.57263e-09, 0, 0.55, 1.6008e-10, 0.362742, -0.000854433)
 
 [node name="CollisionShape3D" type="CollisionShape3D" parent="CollisionGrind"]
 shape = SubResource("BoxShape3D_i6fxl")
@@ -33,28 +34,33 @@ size = Vector3(1, 1, 1.99524)
 material = SubResource("StandardMaterial3D_8u3a5")
 
 [node name="Path3D" type="Path3D" parent="."]
-transform = Transform3D(1, 0, -1.3113e-07, 0, 1, 0, 2.90755e-08, 0, 0.268293, 0.313245, -0.194019, 2.27693e-09)
+transform = Transform3D(1, 0, -1.81395e-07, 0, 1, 0, 4.02207e-08, 0, 0.268293, 0.37, -0.213, 4.12374e-09)
 curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3D"]
-transform = Transform3D(0.999886, -0.000168972, -0.0134503, 1.45516e-11, 0.9999, -0.0125609, 0.0134516, 0.01256, 0.999791, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999975, -8.48039e-07, 0.00170161, 5.68421e-14, 0.999977, 0.000498343, -0.00170165, -0.000498351, 0.999957, -0.374298, 0.597562, 1.78829)
 loop = false
 
 [node name="RigidBody3D" type="CSGBox3D" parent="Path3D/PathFollow3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
 
 [node name="Path3Dleftdown" type="Path3D" parent="."]
-transform = Transform3D(-1, 0, 2.34549e-08, 0, 1, 0, -8.74228e-08, 0, -0.268293, -0.382721, -0.212805, -2.78194e-09)
+transform = Transform3D(-1, 0, 7.37203e-08, 0, 1, 0, -9.85681e-08, 0, -0.268293, -0.37, -0.213, -4.12374e-09)
 curve = SubResource("Curve3D_fworq")
 script = ExtResource("3_i1jkb")
 
 [node name="PathFollow3D" type="PathFollow3D" parent="Path3Dleftdown"]
-transform = Transform3D(0.999887, -0.000168974, -0.0134505, 1.45516e-11, 0.999914, -0.0125611, 0.0134516, 0.0125602, 0.999804, -0.374288, 0.599532, 1.78809)
+transform = Transform3D(0.999976, -8.48051e-07, 0.00170164, 5.68421e-14, 0.999991, 0.000498349, -0.00170165, -0.000498358, 0.99997, -0.374298, 0.597562, 1.78829)
 loop = false
 
 [node name="RigidBody3D" type="CSGBox3D" parent="Path3Dleftdown/PathFollow3D"]
 transform = Transform3D(0.1, 0, 0, 0, 0.1, 0, 0, 0, 0.1, 0, 0, 0)
+
+[node name="GrindSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_67jnt")
+volume_db = -7.0
+pitch_scale = 2.0
 
 [connection signal="body_entered" from="CollisionGrind" to="." method="_on_collision_grind_body_entered"]
 [connection signal="body_entered" from="CollisionGrind" to="Path3D" method="_on_collision_grind_body_entered"]

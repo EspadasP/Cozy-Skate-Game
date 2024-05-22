@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://xj4kvrmttpl3"
+path="res://.godot/imported/character-zombie.obj-2a0861a0298c156e494aa0fd7660e9cc.mesh"
+
+[deps]
+
+files=["res://.godot/imported/character-zombie.obj-2a0861a0298c156e494aa0fd7660e9cc.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/character-zombie.obj"
+dest_files=["res://.godot/imported/character-zombie.obj-2a0861a0298c156e494aa0fd7660e9cc.mesh", "res://.godot/imported/character-zombie.obj-2a0861a0298c156e494aa0fd7660e9cc.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://bh0p0b3oc85tp"
+path="res://.godot/imported/gravestone-decorative.obj-f87f8612524b34a448f19315ab511cff.mesh"
+
+[deps]
+
+files=["res://.godot/imported/gravestone-decorative.obj-f87f8612524b34a448f19315ab511cff.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/gravestone-decorative.obj"
+dest_files=["res://.godot/imported/gravestone-decorative.obj-f87f8612524b34a448f19315ab511cff.mesh", "res://.godot/imported/gravestone-decorative.obj-f87f8612524b34a448f19315ab511cff.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

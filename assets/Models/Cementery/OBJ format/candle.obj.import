@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://1kihpdhhxqr6"
+path="res://.godot/imported/candle.obj-4adbf51aca1289b98a2f3a9199696742.mesh"
+
+[deps]
+
+files=["res://.godot/imported/candle.obj-4adbf51aca1289b98a2f3a9199696742.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/candle.obj"
+dest_files=["res://.godot/imported/candle.obj-4adbf51aca1289b98a2f3a9199696742.mesh", "res://.godot/imported/candle.obj-4adbf51aca1289b98a2f3a9199696742.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

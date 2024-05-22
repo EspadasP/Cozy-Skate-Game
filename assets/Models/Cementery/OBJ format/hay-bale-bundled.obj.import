@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://c3a2xgrhpsxef"
+path="res://.godot/imported/hay-bale-bundled.obj-4bf4a90722ae3c56ae8d2587eb983d6d.mesh"
+
+[deps]
+
+files=["res://.godot/imported/hay-bale-bundled.obj-4bf4a90722ae3c56ae8d2587eb983d6d.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/hay-bale-bundled.obj"
+dest_files=["res://.godot/imported/hay-bale-bundled.obj-4bf4a90722ae3c56ae8d2587eb983d6d.mesh", "res://.godot/imported/hay-bale-bundled.obj-4bf4a90722ae3c56ae8d2587eb983d6d.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

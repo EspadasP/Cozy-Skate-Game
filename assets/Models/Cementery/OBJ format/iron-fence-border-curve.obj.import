@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://3edththowake"
+path="res://.godot/imported/iron-fence-border-curve.obj-b4a4f15e5c87e7e4d6dd95bab4dd12ae.mesh"
+
+[deps]
+
+files=["res://.godot/imported/iron-fence-border-curve.obj-b4a4f15e5c87e7e4d6dd95bab4dd12ae.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/iron-fence-border-curve.obj"
+dest_files=["res://.godot/imported/iron-fence-border-curve.obj-b4a4f15e5c87e7e4d6dd95bab4dd12ae.mesh", "res://.godot/imported/iron-fence-border-curve.obj-b4a4f15e5c87e7e4d6dd95bab4dd12ae.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

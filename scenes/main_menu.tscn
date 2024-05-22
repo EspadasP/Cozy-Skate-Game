@@ -1,0 +1,182 @@
+[gd_scene load_steps=11 format=3 uid="uid://d0iumb8ftwssx"]
+
+[ext_resource type="Texture2D" uid="uid://dgohqbdxwpxke" path="res://assets/UI/MainMenu.png" id="1_2dl5r"]
+[ext_resource type="Script" path="res://scenes/main_menu.gd" id="1_xeugp"]
+[ext_resource type="FontFile" uid="uid://cw0l2fpoag0md" path="res://assets/UI/Crang.ttf" id="2_3gd8y"]
+[ext_resource type="FontFile" uid="uid://jrw5qabhtujf" path="res://assets/UI/upheavtt.ttf" id="3_njmxi"]
+[ext_resource type="AudioStream" uid="uid://cqdbyodnde66y" path="res://assets/Sounds/Music/glitch-quick-rap-beat.mp3" id="5_7t81v"]
+[ext_resource type="Script" path="res://scenes/HSlider.gd" id="6_28ffi"]
+[ext_resource type="FontFile" uid="uid://bc1mnhoqxgmx5" path="res://assets/UI/conthrax-sb.otf" id="6_un8bp"]
+[ext_resource type="AudioStream" uid="uid://dng5pu0t764sh" path="res://assets/Sounds/SFX/birdsfx.mp3" id="8_1letq"]
+[ext_resource type="Script" path="res://scenes/Music.gd" id="8_gfc6c"]
+[ext_resource type="Script" path="res://scenes/SFX.gd" id="9_8c3kv"]
+
+[node name="MainMenu" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_xeugp")
+
+[node name="Background" type="TextureRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 40.0
+texture = ExtResource("1_2dl5r")
+
+[node name="PlayButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 230.722
+offset_top = 244.0
+offset_right = 433.722
+offset_bottom = 286.0
+rotation = -0.00270699
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_hover_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_njmxi")
+theme_override_font_sizes/font_size = 37
+text = "PLAY GAME"
+flat = true
+alignment = 2
+
+[node name="OptionsButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 230.838
+offset_top = 314.18
+offset_right = 433.838
+offset_bottom = 356.18
+rotation = -0.00714896
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_hover_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_njmxi")
+theme_override_font_sizes/font_size = 37
+text = "OPTIONS"
+flat = true
+alignment = 2
+
+[node name="QuitButton" type="Button" parent="."]
+layout_mode = 0
+offset_left = 228.217
+offset_top = 378.196
+offset_right = 431.217
+offset_bottom = 420.196
+rotation = -0.0157041
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_colors/font_pressed_color = Color(0.529412, 0.529412, 0.529412, 1)
+theme_override_colors/font_hover_color = Color(0.717647, 0.717647, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_njmxi")
+theme_override_font_sizes/font_size = 37
+text = "QUIT
+"
+flat = true
+alignment = 2
+
+[node name="GameName" type="Label" parent="."]
+layout_mode = 0
+offset_left = 95.0
+offset_top = 150.0
+offset_right = 437.0
+offset_bottom = 211.0
+rotation = 0.0194403
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("2_3gd8y")
+theme_override_font_sizes/font_size = 60
+text = "BOXY SK8"
+
+[node name="Music" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_7t81v")
+autoplay = true
+bus = &"Music"
+
+[node name="SFX" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("8_1letq")
+autoplay = true
+bus = &"SFX"
+
+[node name="AudioSliders" type="Control" parent="."]
+visible = false
+anchors_preset = 0
+offset_left = 490.0
+offset_top = 167.0
+offset_right = 530.0
+offset_bottom = 207.0
+rotation = 0.0051691
+
+[node name="Mastertag" type="Label" parent="AudioSliders"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 9.0
+offset_right = 156.0
+offset_bottom = 33.0
+rotation = -0.00111503
+theme_override_fonts/font = ExtResource("6_un8bp")
+theme_override_font_sizes/font_size = 10
+text = "Master volume"
+
+[node name="Master" type="HSlider" parent="AudioSliders/Mastertag"]
+layout_mode = 0
+offset_left = -0.98996
+offset_top = -9.00111
+offset_right = 170.01
+offset_bottom = 57.9989
+max_value = 1.0
+step = 0.1
+scrollable = false
+tick_count = 8
+script = ExtResource("6_28ffi")
+
+[node name="Musictag" type="Label" parent="AudioSliders"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 62.0
+offset_right = 157.0
+offset_bottom = 86.0
+rotation = -0.00111503
+theme_override_fonts/font = ExtResource("6_un8bp")
+theme_override_font_sizes/font_size = 10
+text = "Music volume"
+
+[node name="Music" type="HSlider" parent="AudioSliders/Musictag"]
+layout_mode = 0
+offset_left = -1.0
+offset_top = 16.0
+offset_right = 170.0
+offset_bottom = 32.0
+max_value = 1.0
+step = 0.1
+scrollable = false
+tick_count = 8
+script = ExtResource("8_gfc6c")
+
+[node name="SFXtag" type="Label" parent="AudioSliders"]
+layout_mode = 0
+offset_left = 1.0
+offset_top = 113.0
+offset_right = 156.0
+offset_bottom = 137.0
+rotation = -0.00111503
+theme_override_fonts/font = ExtResource("6_un8bp")
+theme_override_font_sizes/font_size = 10
+text = "FX volume"
+
+[node name="SFX" type="HSlider" parent="AudioSliders/SFXtag"]
+layout_mode = 0
+offset_left = -0.0189514
+offset_top = 17.0
+offset_right = 170.981
+offset_bottom = 33.0
+max_value = 1.0
+step = 0.1
+scrollable = false
+tick_count = 8
+script = ExtResource("9_8c3kv")
+
+[connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="OptionsButton" to="." method="_on_options_button_pressed"]
+[connection signal="pressed" from="QuitButton" to="." method="_on_quit_button_pressed"]

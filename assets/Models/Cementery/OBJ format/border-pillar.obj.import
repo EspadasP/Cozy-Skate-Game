@@ -1,0 +1,22 @@
+[remap]
+
+importer="wavefront_obj"
+importer_version=1
+type="Mesh"
+uid="uid://dbrweag270wtg"
+path="res://.godot/imported/border-pillar.obj-9d34b6bbc3034841a1123412f67d9de0.mesh"
+
+[deps]
+
+files=["res://.godot/imported/border-pillar.obj-9d34b6bbc3034841a1123412f67d9de0.mesh"]
+
+source_file="res://assets/Models/Cementery/OBJ format/border-pillar.obj"
+dest_files=["res://.godot/imported/border-pillar.obj-9d34b6bbc3034841a1123412f67d9de0.mesh", "res://.godot/imported/border-pillar.obj-9d34b6bbc3034841a1123412f67d9de0.mesh"]
+
+[params]
+
+generate_tangents=true
+scale_mesh=Vector3(1, 1, 1)
+offset_mesh=Vector3(0, 0, 0)
+optimize_mesh=true
+force_disable_mesh_compression=false

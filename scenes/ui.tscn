@@ -1,14 +1,24 @@
-[gd_scene load_steps=4 format=3 uid="uid://cjl6y4wjpsx7e"]
+[gd_scene load_steps=12 format=3 uid="uid://cjl6y4wjpsx7e"]
 
+[ext_resource type="Script" path="res://scenes/ui.gd" id="1_5yc4l"]
 [ext_resource type="FontFile" uid="uid://bc1mnhoqxgmx5" path="res://assets/UI/conthrax-sb.otf" id="1_xchk3"]
 [ext_resource type="Script" path="res://scenes/Label.gd" id="2_7ftxq"]
-[ext_resource type="Texture2D" uid="uid://b707nghg48mhc" path="res://assets/UI/buttonset1.png" id="3_am0c0"]
+[ext_resource type="FontFile" uid="uid://jrw5qabhtujf" path="res://assets/UI/upheavtt.ttf" id="3_c8per"]
+[ext_resource type="FontFile" uid="uid://bqcj4dcufdpwa" path="res://assets/UI/RETROTECH.ttf" id="4_6fubb"]
+[ext_resource type="Texture2D" uid="uid://bdry5mx68r2s7" path="res://assets/UI/Buttons.png" id="6_l5e00"]
+[ext_resource type="FontFile" uid="uid://15i0x6khyng2" path="res://assets/UI/pil love.ttf" id="7_4fn78"]
+[ext_resource type="PackedScene" uid="uid://crwq1sd0507t0" path="res://scenes/reload.tscn" id="8_mmcic"]
+[ext_resource type="Texture2D" uid="uid://mejucw1wckwb" path="res://assets/UI/xbox_button_color_a.png" id="9_e6qto"]
+[ext_resource type="AudioStream" uid="uid://yyek17rwhy6c" path="res://assets/Sounds/SFX/countereffect.mp3" id="10_8e51h"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_1dnn3"]
 
 [node name="UI" type="Control"]
 layout_mode = 3
 anchors_preset = 0
 offset_right = 1151.0
 offset_bottom = 648.0
+script = ExtResource("1_5yc4l")
 
 [node name="Label" type="Label" parent="."]
 layout_mode = 1
@@ -24,7 +34,7 @@ offset_bottom = -11.0
 grow_horizontal = 2
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.929412, 0.670588, 0, 1)
-theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_shadow_color = Color(0.239216, 0.239216, 0.239216, 1)
 theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
 theme_override_fonts/font = ExtResource("1_xchk3")
 theme_override_font_sizes/font_size = 0
@@ -36,34 +46,167 @@ script = ExtResource("2_7ftxq")
 
 [node name="Scorelabel" type="Label" parent="Label"]
 layout_mode = 0
-offset_left = 370.0
+offset_left = 372.0
 offset_top = -30.0
-offset_right = 440.0
+offset_right = 442.0
 offset_bottom = -7.0
+theme_override_colors/font_shadow_color = Color(0.364706, 0.364706, 0.364706, 1)
+theme_override_fonts/font = ExtResource("3_c8per")
+theme_override_font_sizes/font_size = 25
 horizontal_alignment = 2
 autowrap_mode = 2
 
 [node name="MultLabel" type="Label" parent="Label"]
 layout_mode = 0
-offset_left = 448.0
-offset_top = -38.0
-offset_right = 488.0
-offset_bottom = -3.0
-theme_override_colors/font_color = Color(1, 0, 0, 1)
-theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
-theme_override_font_sizes/font_size = 25
+offset_left = 455.0
+offset_top = -29.0
+offset_right = 495.0
+offset_bottom = 6.0
+theme_override_colors/font_color = Color(0.843137, 0, 0.227451, 1)
+theme_override_colors/font_shadow_color = Color(0.976471, 0.670588, 0.717647, 1)
+theme_override_colors/font_outline_color = Color(0.0117647, 0.0117647, 0.0117647, 1)
+theme_override_fonts/font = ExtResource("4_6fubb")
+theme_override_font_sizes/font_size = 26
 
-[node name="TextureRect" type="TextureRect" parent="."]
+[node name="CurrentScoreLabel" type="Label" parent="Label"]
+layout_mode = 0
+offset_left = -86.0
+offset_top = -499.0
+offset_right = 86.0
+offset_bottom = -401.0
+theme_override_colors/font_color = Color(0.929412, 0.670588, 0, 1)
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("3_c8per")
+theme_override_font_sizes/font_size = 40
+
+[node name="Buttons" type="TextureRect" parent="."]
 layout_mode = 1
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -121.0
+offset_left = -230.0
 offset_top = 24.0
-offset_right = -21.0
-offset_bottom = 124.0
+offset_right = -30.0
+offset_bottom = 224.0
 grow_horizontal = 0
-texture = ExtResource("3_am0c0")
+texture = ExtResource("6_l5e00")
 stretch_mode = 5
 
+[node name="Ollietrick" type="Label" parent="Buttons"]
+layout_mode = 0
+offset_left = 48.0
+offset_top = 128.0
+offset_right = 136.0
+offset_bottom = 151.0
+theme_override_fonts/font = ExtResource("1_xchk3")
+theme_override_font_sizes/font_size = 12
+text = "OLLIE"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Fliptrick" type="Label" parent="Buttons"]
+layout_mode = 0
+offset_left = -54.0
+offset_top = 93.0
+offset_right = 65.0
+offset_bottom = 116.0
+theme_override_fonts/font = ExtResource("1_xchk3")
+theme_override_font_sizes/font_size = 12
+text = "KICKFLIP"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="Shovetrick" type="Label" parent="Buttons"]
+layout_mode = 0
+offset_left = 120.0
+offset_top = 93.0
+offset_right = 218.0
+offset_bottom = 116.0
+theme_override_fonts/font = ExtResource("1_xchk3")
+theme_override_font_sizes/font_size = 12
+text = "SHOVE-IT"
+vertical_alignment = 1
+
+[node name="Grind" type="Label" parent="Buttons"]
+layout_mode = 0
+offset_left = 118.0
+offset_top = 8.0
+offset_right = 221.0
+offset_bottom = 50.0
+theme_override_fonts/font = ExtResource("1_xchk3")
+theme_override_font_sizes/font_size = 12
+text = "NOSEGRIND"
+vertical_alignment = 1
+autowrap_mode = 2
+
+[node name="GameplayTimer" type="Label" parent="."]
+layout_mode = 0
+offset_left = 524.0
+offset_top = 15.0
+offset_right = 630.0
+offset_bottom = 82.0
+theme_override_colors/font_shadow_color = Color(0.203922, 0.203922, 0.203922, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("7_4fn78")
+theme_override_font_sizes/font_size = 40
+text = "01:30"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SecTimer" type="Timer" parent="GameplayTimer"]
+autostart = true
+
+[node name="TotalTimer" type="Timer" parent="GameplayTimer"]
+wait_time = 90.0
+one_shot = true
+autostart = true
+
+[node name="FinalScoreLabel" type="Label" parent="."]
+layout_mode = 0
+offset_right = 1155.0
+offset_bottom = 647.0
+theme_override_colors/font_shadow_color = Color(0, 0, 0, 1)
+theme_override_colors/font_outline_color = Color(0, 0, 0, 1)
+theme_override_fonts/font = ExtResource("4_6fubb")
+theme_override_font_sizes/font_size = 90
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reload" parent="." instance=ExtResource("8_mmcic")]
+visible = false
+offset_left = 74.0
+offset_top = -266.0
+offset_right = 114.0
+offset_bottom = -226.0
+
+[node name="PressA" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 414.0
+offset_top = 378.0
+offset_right = 741.0
+offset_bottom = 401.0
+rotation = -0.00249226
+theme_override_fonts/font = ExtResource("1_xchk3")
+text = "PRESS        TO GO BACK TO MENU"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="TextureRect" type="TextureRect" parent="PressA"]
+texture_filter = 2
+material = SubResource("CanvasItemMaterial_1dnn3")
+layout_mode = 0
+offset_left = 73.0172
+offset_top = -6.81799
+offset_right = 108.017
+offset_bottom = 25.182
+texture = ExtResource("9_e6qto")
+expand_mode = 2
+
+[node name="Counter" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("10_8e51h")
+
 [connection signal="timeout" from="Label/CleanTricksTextTimer" to="Label" method="_on_clean_tricks_text_timer_timeout"]
+[connection signal="timeout" from="GameplayTimer/SecTimer" to="." method="_on_sec_timer_timeout"]
+[connection signal="timeout" from="GameplayTimer/TotalTimer" to="." method="_on_total_timer_timeout"]

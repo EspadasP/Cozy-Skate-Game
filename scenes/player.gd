@@ -15,6 +15,9 @@ var can_nosemanual = true
 var scored_line = 0
 var mult = 1
 var isgrinding = false
+var player_stopped = false
+var continue_grind = false
+var rollingSFX = false
 
 signal grindout
 @onready var ui = get_node("../UI/Label")
@@ -23,31 +26,42 @@ func _ready():
 	floor_max_angle = deg_to_rad(89)
 	
 func _physics_process(delta):
-	var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
-	var desired_direction = Vector3(direction.x, 0, direction.y)
-	velocity = lerp(velocity, desired_direction * SPEED, delta * ACCELERATION)
-	if desired_direction.length() > 0:
-		var desired_rotation = atan2(-desired_direction.x, -desired_direction.z)
-		rotation.y = lerp_angle(rotation.y, desired_rotation, ROTATION_FORCE * delta)
+	if player_stopped:
+		velocity = Vector3.ZERO
+	else:
+		var direction = Input.get_vector("move_left", "move_right", "move_up", "move_down")
+		var desired_direction = Vector3(direction.x, 0, direction.y)
+		velocity = lerp(velocity, desired_direction * SPEED, delta * ACCELERATION)
+		if desired_direction.length() > 0:
+			var desired_rotation = atan2(-desired_direction.x, -desired_direction.z)
+			rotation.y = lerp_angle(rotation.y, desired_rotation, ROTATION_FORCE * delta)
+			if !is_jumping and is_on_floor() and !rollingSFX:
+				$RollingSFX.play()
+				rollingSFX = true
+			
+				
 		if is_on_floor():
 			_tilt()
+			velocity.y = 0
+			
+			
+		
+		else:
+			velocity.y += GRAVITY * delta
+			rotation = Vector3(0,rotation.y,0)
+		
+	
+		if is_jumping and is_on_floor():
+			velocity.y = JUMP_FORCE
+			is_jumping = false
+	
+		move_and_slide()
+	
 	
 	
 
 	
-	if is_on_floor():
-		velocity.y = 0
-		
-	else:
-		velocity.y += GRAVITY * delta
-		rotation = Vector3(0,rotation.y,0)
-		
 	
-	if is_jumping and is_on_floor():
-		velocity.y = JUMP_FORCE
-		is_jumping = false
-	
-	move_and_slide()
 
 func _process(delta):
 	if is_on_floor() and !isgrinding and !holding_manual:
@@ -62,7 +76,7 @@ func _process(delta):
 			can_nosemanual = false
 			$Tricks/ManualTimer.start()
 			ui.update_label_text("MANUAL")
-		if Input.is_action_pressed("LT") and holding_manual:
+		if Input.is_action_pressed("LT") and holding_manual and not $Tricks/AnimationPlayer.is_playing():
 			$Tricks/AnimationPlayer.play("Manual")
 		if Input.is_action_just_released("LT"):
 			holding_manual = false
@@ -75,7 +89,7 @@ func _process(delta):
 			can_manual = false
 			$Tricks/ManualTimer.start()
 			ui.update_label_text("NOSEMANUAL")
-		if Input.is_action_pressed("RT") and holding_manual:
+		if Input.is_action_pressed("RT") and holding_manual and not $Tricks/AnimationPlayer.is_playing():
 			$Tricks/AnimationPlayer.play("Nosemanual")
 		if Input.is_action_just_released("RT"):
 			holding_manual = false
@@ -114,13 +128,13 @@ func _process(delta):
 			trick()
 			add_to_line(100)
 		
-		if Input.is_action_just_pressed("shove_trick") and Input.is_action_pressed("LB"):
+		if Input.is_action_just_pressed("shove_trick") and Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("360ShoveIt")
 			ui.update_label_text("360 SHOVE-IT")
 			trick()
 			add_to_line(200)
 		
-		if Input.is_action_just_pressed("flip_trick") and Input.is_action_pressed("LB"):
+		if Input.is_action_just_pressed("flip_trick") and Input.is_action_pressed("LB") and !Input.is_action_pressed("RB"):
 			$Tricks/AnimationPlayer.play("VarialHeel")
 			ui.update_label_text("VARIALHEEL")
 			trick()
@@ -175,6 +189,9 @@ func _tilt():
 		
 
 func trick():
+	$RollingSFX.stop()
+	rollingSFX = false
+	$OllieSFX.play()
 	is_jumping = true
 	$Tricks/Timer.start()
 	trickeable = false
@@ -191,10 +208,11 @@ func add_to_line(score):
 
 func end_line():
 	ui._on_clean_tricks_text_timer_timeout()
-	#save_score(scored_line, mult) #implementar guardado de linea
+	Controlautoload.scored_line_add(scored_line*mult)
+	ui.current_score_update(Controlautoload.current_score)
 	scored_line = 0
 	mult = 1
-
+	
 
 func _on_timer_timeout():
 	trickeable = true
@@ -205,10 +223,28 @@ func _on_manual_timer_timeout():
 func play_grind():
 	$Tricks/AnimationPlayerGrinds.play("nosegrind")
 	ui.update_label_text("NOSEGRIND")
-	add_to_line(-1) #el -1 indica que se añade un multiplicador
+	if !continue_grind:
+		add_to_line(-1) #el -1 indica que se añade un multiplicador
 
 func stop_grind():
 	$Tricks/AnimationPlayerGrinds.stop()
 
 func is_grinding(grinding):
 	isgrinding = grinding
+	
+func stop_player():
+	self.visible = false
+	player_stopped = true
+	can_manual = false
+	can_nosemanual = false
+	trickeable = false
+	Controlautoload.define_final_score()
+	
+func get_continue_grind():
+	return continue_grind
+
+func set_continue_grind(set):
+	continue_grind = set
+
+func _on_rolling_sfx_finished():
+	rollingSFX = false
